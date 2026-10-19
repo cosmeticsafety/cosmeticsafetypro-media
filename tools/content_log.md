@@ -14,3 +14,15 @@ Media public URL base: https://raw.githubusercontent.com/cosmeticsafety/cosmetic
 ## Topics used
 Posts: Etsy/Amazon need CPSR; CPNP notification; PIF contents; 5 benefits of safety assessment; SCPN for GB; Responsible Person duties; UK vs EU at a glance
 Reels: 3 things before selling in UK; Etsy myth vs fact; CPNP in 4 steps; PIF audit-ready; label compliance checklist; SCPN vs CPNP; what is a Responsible Person; how long a CPSR takes
+
+## Weekly reel mix (from week of 27 Oct 2026)
+Each week's 7 reels = 2–3 "Regulatory update" reels (cosmetics AND perfume/fragrance news) + 4–5 general tip reels. Update reels use the NEWS list in tools/reels.py (6th field = source line shown on screen; kicker starts with "⚡ Regulatory update · EU/UK" or "⚡ Perfume update · IFRA"). Re-verify every fact with a web search before using; drop items that are outdated.
+
+## Regulatory update backlog (researched 19 Oct 2026; re-verify before use)
+- EU fragrance allergens: Reg (EU) 2023/1545 adds 56 allergens (total 81). Label above 0.001% leave-on / 0.01% rinse-off. New units placed on EU market from 31 Jul 2026 must comply; non-compliant stock already on market may be sold until 31 Jul 2028.
+- UK annex amendments (SI published 15 Jan 2026): 4-MBC banned (placing 15 Jul 2026, making available 14 Jan 2027); 16 CMRs incl. TPO (gel nails) banned (placing 15 Aug 2026, making available 14 Feb 2027); "releases formaldehyde" warning above 0.001% (15 Jul 2026 / 14 Jan 2027). Source: CTPA / OPSS.
+- IFRA 52nd Amendment: consultation closed 12 Jun 2026, End of Consultation Letter 31 Aug 2026, Notification expected Jan 2027; new creations 11 months after notification, existing creations 30 months after; 48 new dermal sensitisation restriction standards; furocoumarins in NCS standard (1 ppm sun-exposure / 5 ppm other leave-on). Source: ifrafragrance.org.
+- EU retinol / vitamin A, Reg (EU) 2024/996: max 0.3% RE face & hand, 0.05% RE body lotion; new products from 1 Nov 2025; off shelves by 1 May 2027; vitamin A intake warning on label. Not applicable in GB.
+- EU Omnibus VI (political agreement June 2026, formal adoption pending at that time — check status): CMR ban kept; withdrawal 6 months stop placing / 12 months full withdrawal; 12 months to request derogation; nanomaterial prior notification kept.
+- EU microplastics, Reg (EU) 2023/2055: rinse-off Oct 2027; leave-on Oct 2029; make-up/lip/nail Oct 2035, with microparticle labelling for those from Oct 2031.
+- EU PFAS (PFHxA) REACH restriction: transitional period ended 10 Oct 2026 for relevant uses (25 ppb PFHxA / 1000 ppb related substances) — verify cosmetics scope before using.

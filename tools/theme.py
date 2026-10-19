@@ -54,6 +54,12 @@ THEMES = {
  "2026-10-24": ("#1A1A1A", "#262626", "#F5F0E6", "#E7C26B"),  # charcoal + gold
  "2026-10-25": ("#0E3B47", "#134B59", "#EEF7F7", "#7FE0E0"),  # ocean + aqua
  "2026-10-26": ("#ECE8F7", "#FFFFFF", "#231C3D", "#5B45C2"),  # lavender + violet
+ "2026-10-27": ("#141414", "#222222", "#F7F3E8", "#FFD23F"),  # ink + yellow (update)
+ "2026-10-30": ("#0B1F3A", "#132C50", "#F3F6FB", "#6FB1FF"),  # midnight + sky (update)
+ "2026-11-03": ("#2A1A12", "#3A251A", "#F6EDE3", "#E3A86B"),  # espresso + amber (update)
+ "2026-11-06": ("#FFF1E6", "#FFFFFF", "#2B1B14", "#C2410C"),  # peach + burnt orange (update)
+ "2026-11-10": ("#16213E", "#1F2D52", "#F2F4FA", "#A5B4FC"),  # indigo + periwinkle (update)
+ "2026-11-13": ("#E8F5EF", "#FFFFFF", "#10291F", "#0F7A55"),  # mint + emerald (update)
 }
 
 def theme_css(name):

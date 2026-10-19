@@ -27,6 +27,27 @@ REELS = [
   "With us", ["Free formula review first", "Standard report: 1–2 weeks", "Express: 24–48 hours", "Valid for UK and EU"]),
 ]
 
+NEWS = [
+ ("2026-10-27-allergens-81", "⚡ Regulatory update · EU", "EU perfume labels now list <em>81 allergens</em>",
+  "What changed", ["56 new fragrance allergens added (26 → 81)", "Label if above 0.001% leave-on / 0.01% rinse-off",
+   "New units placed since 31 July 2026", "Older stock sellable until 31 July 2028"], "Regulation (EU) 2023/1545"),
+ ("2026-10-30-uk-4mbc-tpo", "⚡ Regulatory update · UK", "UK bans <em>4-MBC</em> and <em>TPO</em> in cosmetics",
+  "Key dates", ["4-MBC (UV filter): no new stock from 15 Jul 2026", "TPO (gel nails): no new stock from 15 Aug 2026",
+   "Off shelves: 14 Jan 2027 / 14 Feb 2027", "“Releases formaldehyde” warning above 0.001%"], "UK Cosmetics Regulation annex amendments, Jan 2026"),
+ ("2026-11-03-ifra-52", "⚡ Perfume update · IFRA", "<em>IFRA 52</em> is coming for fragrances",
+  "What to expect", ["48 new restriction standards", "Notification expected January 2027", "New creations: 11 months to comply",
+   "Existing creations: 30 months to comply"], "IFRA, End of Consultation Letter, Aug 2026"),
+ ("2026-11-06-retinol", "⚡ Regulatory update · EU", "New EU <em>retinol limits</em>: is your serum compliant?",
+  "The rules", ["Face & hand products: max 0.3% RE", "Body lotions: max 0.05% RE", "New products: since 1 Nov 2025",
+   "Off shelves by 1 May 2027"], "Regulation (EU) 2024/996"),
+ ("2026-11-10-omnibus-vi", "⚡ Regulatory update · EU", "<em>Omnibus VI</em>: what it means for cosmetics",
+  "Agreed June 2026", ["CMR substances stay banned", "Faster exit: 6 months to stop sales, 12 to withdraw",
+   "12 months to request a derogation", "Nanomaterial notification kept"], "EU political agreement, June 2026"),
+ ("2026-11-13-microplastics", "⚡ Regulatory update · EU", "The EU <em>microplastics</em> countdown",
+  "Deadlines", ["Rinse-off products: October 2027", "Leave-on products: October 2029", "Make-up, lip & nail: October 2035",
+   "Microparticle label from 2031 (make-up, lip, nail)"], "Regulation (EU) 2023/2055"),
+]
+
 JS = r"""
 const ease=t=>t<0?0:t>1?1:1-Math.pow(1-t,3);
 function show(el,t0,t,dur=0.6,dy=60){const p=ease((t-t0)/dur);el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;}
@@ -42,6 +63,7 @@ window.render=function(t){
   const lk=document.getElementById('listK'); show(lk,listStart,t); hide(lk,ctaStart-0.4,t);
   document.querySelectorAll('.ri').forEach((el,i)=>{show(el,listStart+0.6+i*itemGap,t,0.55,0);
      const p=ease((t-(listStart+0.6+i*itemGap))/0.55); el.style.transform=`translateX(${(1-p)*-120}px)`; hide(el,ctaStart-0.4,t);});
+  const sr=document.getElementById('src'); show(sr,listStart+0.6,t,0.6,0); hide(sr,ctaStart-0.4,t);
   // cta
   ['ctaA','ctaB','ctaC'].forEach((id,i)=>show(document.getElementById(id),ctaStart+i*0.35,t));
   // motif slow drift
@@ -51,7 +73,8 @@ window.render=function(t){
 """
 
 def html(reel):
-    name, kicker, hook, listk, items = reel
+    name, kicker, hook, listk, items = reel[:5]
+    source = reel[5] if len(reel) > 5 else ""
     rows = "".join(f'<div class="item ri" style="opacity:0;padding:30px 34px"><div class="num" style="width:68px;height:68px;font-size:34px">{i+1}</div>'
                    f'<div class="itext" style="font-size:44px">{t}</div></div>' for i, t in enumerate(items))
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}{theme_css(name)}
@@ -68,6 +91,7 @@ def html(reel):
    <div id="listK" class="kicker" style="opacity:0;font-size:34px;margin-bottom:40px">{listk}</div>
    <div class="items" style="gap:22px">{rows}</div>
  </div>
+ <div id="src" class="L" style="top:1480px;opacity:0;font-size:26px;color:var(--mute);letter-spacing:.02em">{("Source: " + source) if source else ""}</div>
  <div class="L" style="top:700px;text-align:left">
    <h1 id="ctaA" style="opacity:0;font-size:104px;margin-bottom:46px">Get compliant <em>with confidence.</em></h1>
    <div id="ctaB" style="opacity:0;display:inline-block" class="cta"><span style="font-size:40px;padding:6px 10px;display:inline-block">Free formula review</span></div>
@@ -95,9 +119,9 @@ def render_reel(pg, reel):
     print("ok", name, round(total, 1), "s")
 
 if __name__ == "__main__":
-    which = sys.argv[1:] or [r[0] for r in REELS]
+    which = [r[0] for r in NEWS] if sys.argv[1:] == ['news'] else (sys.argv[1:] or [r[0] for r in REELS])
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": W, "height": H})
-        for r in REELS:
+        for r in REELS + NEWS:
             if r[0] in which: render_reel(pg, r)
         b.close()
