@@ -26,3 +26,6 @@ Each week's 7 reels = 2–3 "Regulatory update" reels (cosmetics AND perfume/fra
 - EU Omnibus VI (political agreement June 2026, formal adoption pending at that time — check status): CMR ban kept; withdrawal 6 months stop placing / 12 months full withdrawal; 12 months to request derogation; nanomaterial prior notification kept.
 - EU microplastics, Reg (EU) 2023/2055: rinse-off Oct 2027; leave-on Oct 2029; make-up/lip/nail Oct 2035, with microparticle labelling for those from Oct 2031.
 - EU PFAS (PFHxA) REACH restriction: transitional period ended 10 Oct 2026 for relevant uses (25 ppb PFHxA / 1000 ppb related substances) — verify cosmetics scope before using.
+
+## Reel audio (from 20 Oct 2026)
+Every reel must have background music. tools/reels.py calls tools/music.py automatically (original procedurally generated music, royalty-free; needs numpy + scipy — `pip install numpy scipy` if missing). After rendering, confirm each mp4 has an audio stream (`ffprobe -show_streams`) and mean volume around -16 dB (`ffmpeg -af volumedetect`). 19 Oct reel went out silent; 20–26 Oct reels were replaced with *-music.mp4 versions.
