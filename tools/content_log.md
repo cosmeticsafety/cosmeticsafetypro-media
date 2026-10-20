@@ -29,3 +29,7 @@ Each week's 7 reels = 2–3 "Regulatory update" reels (cosmetics AND perfume/fra
 
 ## Reel audio (from 20 Oct 2026)
 Every reel must have background music. tools/reels.py calls tools/music.py automatically (original procedurally generated music, royalty-free; needs numpy + scipy — `pip install numpy scipy` if missing). After rendering, confirm each mp4 has an audio stream (`ffprobe -show_streams`) and mean volume around -16 dB (`ffmpeg -af volumedetect`). 19 Oct reel went out silent; 20–26 Oct reels were replaced with *-music.mp4 versions.
+
+## Rule: post and reel on the same day must cover DIFFERENT topics (from 20 Oct 2026)
+On 20 Oct the post and reel were both about Etsy/CPSR; user asked that this never repeat. When planning a week, check each day's post topic vs reel topic (and YouTube Short) and make sure they don't overlap (e.g. never PIF post + PIF reel, CPNP post + CPNP reel, SCPN post + SCPN-vs-CPNP reel).
+21–25 Oct reels were reshuffled: 21 label checklist, 22 CPNP 4 steps, 23 SCPN vs CPNP, 24 Responsible Person, 25 PIF audit-ready.
