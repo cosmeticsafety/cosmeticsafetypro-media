@@ -2,6 +2,7 @@ import sys, os, json, subprocess
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, os.path.dirname(__file__))
 from theme import CSS, MOTIF, WHATSAPP, SITE, theme_css
+from music import add_music
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "reels")
 os.makedirs(OUT, exist_ok=True)
@@ -105,7 +106,8 @@ def render_reel(pg, reel):
     pg.set_content(html(reel)); pg.wait_for_timeout(200)
     total = pg.evaluate("render(0)")
     nframes = int(total * FPS)
-    out = os.path.join(OUT, name + ".mp4")
+    final = os.path.join(OUT, name + ".mp4")
+    out = os.path.join(OUT, name + "-silent.mp4")
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", str(FPS), "-i", "-",
         "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-shortest",
         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-profile:v", "high", "-crf", "20", "-r", str(FPS),
@@ -114,6 +116,7 @@ def render_reel(pg, reel):
         pg.evaluate(f"render({f / FPS})")
         ff.stdin.write(pg.screenshot(type="jpeg", quality=92))
     ff.stdin.close(); ff.wait()
+    add_music(out, final, seed=int(name[8:10]) * 7 + len(name)); os.remove(out)
     # cover frame (mid-hook)
     pg.evaluate("render(2.5)"); pg.screenshot(path=os.path.join(OUT, name + "-cover.jpg"), type="jpeg", quality=90)
     print("ok", name, round(total, 1), "s")
