@@ -33,3 +33,6 @@ Every reel must have background music. tools/reels.py calls tools/music.py autom
 ## Rule: post and reel on the same day must cover DIFFERENT topics (from 20 Oct 2026)
 On 20 Oct the post and reel were both about Etsy/CPSR; user asked that this never repeat. When planning a week, check each day's post topic vs reel topic (and YouTube Short) and make sure they don't overlap (e.g. never PIF post + PIF reel, CPNP post + CPNP reel, SCPN post + SCPN-vs-CPNP reel).
 21–25 Oct reels were reshuffled: 21 label checklist, 22 CPNP 4 steps, 23 SCPN vs CPNP, 24 Responsible Person, 25 PIF audit-ready.
+
+## Rule: post and reel on the same day must ALSO look different (from 21 Oct 2026)
+User saw a post and reel on the same day in the same colour theme and asked that this not happen. Posts use THEMES[date]; reels use REEL_THEMES[date] (tools/theme.py, `theme_css(name, reel=True)`). Each week, fill BOTH dicts with 7 entries each, all 14 palettes distinct (no reel palette may match or closely resemble the same day's post palette). 22–26 Oct reels were re-rendered as *-r.mp4 with their own palettes.

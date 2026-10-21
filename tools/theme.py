@@ -62,7 +62,17 @@ THEMES = {
  "2026-11-13": ("#E8F5EF", "#FFFFFF", "#10291F", "#0F7A55"),  # mint + emerald (update)
 }
 
-def theme_css(name):
-    bg, card, ink, acc = THEMES[name[:10]]
+# Reels get their OWN palette per day, different from that day's post (rule from 21 Oct 2026)
+REEL_THEMES = {
+ "2026-10-22": ("#E3EEE4", "#FFFFFF", "#1F3B2C", "#2F7A4F"),  # sage + leaf green
+ "2026-10-23": ("#073B3A", "#0B4F4D", "#F2F7F5", "#F2C14E"),  # deep teal + saffron
+ "2026-10-24": ("#E6F1FB", "#FFFFFF", "#0B2545", "#1E6FD9"),  # sky + cobalt
+ "2026-10-25": ("#F6EAD7", "#FFF8EE", "#3B2A1A", "#B4541A"),  # sand + rust
+ "2026-10-26": ("#3A0D16", "#521421", "#FBEFF1", "#FF9AA9"),  # wine + rose
+}
+
+def theme_css(name, reel=False):
+    key = name[:10]
+    bg, card, ink, acc = (REEL_THEMES if reel and key in REEL_THEMES else THEMES)[key]
     return (f":root{{--bg:{bg};--bg2:{card};--ink:{ink};--mint:{acc};--mute:{_rgba(ink,.72)};--line:{_rgba(acc,.28)}}}"
             ".motif svg,#mot svg{stroke:var(--mint)}")

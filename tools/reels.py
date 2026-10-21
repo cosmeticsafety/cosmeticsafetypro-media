@@ -14,17 +14,17 @@ REELS = [
   "Your checklist", ["A Cosmetic Product Safety Report (CPSR)", "A UK-based Responsible Person", "An SCPN notification before launch"]),
  ("2026-10-20-etsy-myth", "Myth vs fact", "“I only sell on Etsy, so I don't need a <em>CPSR</em>.”",
   "Fact", ["Every cosmetic sold in the UK or EU needs a CPSR", "Etsy, Amazon, markets: same law", "No size exemption for small makers"]),
- ("2026-10-22-cpnp-steps", "EU launch", "How to notify your product on the <em>CPNP</em>",
+ ("2026-10-22-cpnp-steps-r", "EU launch", "How to notify your product on the <em>CPNP</em>",
   "The process", ["Appoint an EU Responsible Person", "Complete your CPSR and PIF", "Submit the CPNP notification", "Start selling across the EU"]),
- ("2026-10-25-pif", "Audit-ready?", "Could you show an inspector your <em>PIF</em> today?",
+ ("2026-10-25-pif-r", "Audit-ready?", "Could you show an inspector your <em>PIF</em> today?",
   "It must contain", ["Product description", "Safety report (CPSR)", "GMP statement", "Proof of claims", "Animal testing data"]),
  ("2026-10-21-label", "Label check", "Is your cosmetic label <em>legally compliant</em>?",
   "It must show", ["Responsible Person name + address", "Nominal content", "Best-before or PAO symbol", "Batch number", "Full INCI ingredient list"]),
- ("2026-10-23-scpn-cpnp", "UK vs EU", "<em>SCPN</em> or <em>CPNP</em>? Which do you need?",
+ ("2026-10-23-scpn-cpnp-r", "UK vs EU", "<em>SCPN</em> or <em>CPNP</em>? Which do you need?",
   "Quick answer", ["Great Britain → SCPN", "EU countries → CPNP", "Northern Ireland → CPNP", "Selling in both → you need both"]),
- ("2026-10-24-rp", "Explained", "What is a <em>Responsible Person</em>?",
+ ("2026-10-24-rp-r", "Explained", "What is a <em>Responsible Person</em>?",
   "They", ["Are your legal contact for regulators", "Keep your PIF and CPSR on file", "Notify your products", "Appear on your label"]),
- ("2026-10-26-how-long", "FAQ", "How long does a <em>CPSR</em> take?",
+ ("2026-10-26-how-long-r", "FAQ", "How long does a <em>CPSR</em> take?",
   "With us", ["Free formula review first", "Standard report: 1–2 weeks", "Express: 24–48 hours", "Valid for UK and EU"]),
 ]
 
@@ -78,7 +78,7 @@ def html(reel):
     source = reel[5] if len(reel) > 5 else ""
     rows = "".join(f'<div class="item ri" style="opacity:0;padding:30px 34px"><div class="num" style="width:68px;height:68px;font-size:34px">{i+1}</div>'
                    f'<div class="itext" style="font-size:44px">{t}</div></div>' for i, t in enumerate(items))
-    return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}{theme_css(name)}
+    return f"""<!doctype html><html><head><meta charset="utf-8"><style>{CSS}{theme_css(name, reel=True)}
 .L{{position:absolute;left:90px;right:90px}}</style></head><body>
 <div class="frame" style="width:{W}px;height:{H}px">
  <div id="mot" style="position:absolute;right:-260px;top:520px;width:760px;opacity:.22">{MOTIF}</div>
