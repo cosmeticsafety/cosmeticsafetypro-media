@@ -20,8 +20,8 @@ LOGO = "data:image/png;base64," + base64.b64encode(open(os.path.join(os.path.dir
 
 W, H, FPS, SR = 1920, 1080, 30, 44100
 VOICE, LANG, SPEED = "bf_emma", "en-gb", 1.0
-GAP = 0.35          # silence between narration lines (s)
-TAIL = 0.9          # pause at end of each scene (s)
+GAP = 0.6          # silence between narration lines (s)
+TAIL = 1.0          # pause at end of each scene (s)
 
 DARK = (":root{--bg:#0A2350;--bg2:#13306A;--ink:#F3F6FA;--mint:#7CC47E;--mute:rgba(243,246,250,.74);--line:rgba(124,196,126,.30)}")
 LIGHT = (":root{--bg:#F2F6F9;--bg2:#FFFFFF;--ink:#022356;--mint:#0B6A80;--mute:rgba(2,35,86,.70);--line:rgba(11,106,128,.24)}")
@@ -34,12 +34,12 @@ SCENES = [
    ("In the next few minutes, we'll walk you through exactly what you need, and how Cosmetic Safety Pro can get your products compliant, fast.", None)]),
  ("The four essentials", "Overview", "The <em>four essentials</em>", LIGHT, [
    ("There are four essentials for every cosmetic product.", None),
-   ("A Cosmetic Product Safety Report, or C P S R.", "Cosmetic Product Safety Report (CPSR)"),
+   ("A Cosmetic Product Safety Report.", "Cosmetic Product Safety Report (CPSR)"),
    ("A Responsible Person.", "A Responsible Person (UK and/or EU)"),
-   ("A Product Information File, or P I F.", "A Product Information File (PIF)"),
-   ("And a product notification: on the S C P N portal in Great Britain, or the C P N P in the European Union. Let's look at each one.", "A notification: SCPN (GB) or CPNP (EU)")]),
+   ("A Product Information File.", "A Product Information File (PIF)"),
+   ("And a product notification: through the Submit Cosmetic Product Notification service in Great Britain, or the Cosmetic Product Notification Portal in the European Union. Let's look at each one.", "A notification: SCPN (GB) or CPNP (EU)")]),
  ("CPSR: the safety report", "Essential 1", "The <em>CPSR</em>: your product's safety report", DARK, [
-   ("The C P S R is the heart of compliance. It's a safety assessment of your finished product, in two parts.", None),
+   ("The Cosmetic Product Safety Report is the heart of compliance. It's a safety assessment of your finished product, in two parts.", None),
    ("Part A gathers the safety information: the formula, stability and microbiological data, how much product people are exposed to, and the toxicology of every ingredient.", "Part A: formula, stability, microbiology, exposure, toxicology"),
    ("Part B is the assessment itself, where a qualified Safety Assessor reviews it all and confirms the product is safe to use.", "Part B: signed off by a qualified Safety Assessor"),
    ("And yes, you need one whether you sell on Etsy, on Amazon, at a local market, or through a major retailer.", "Required for Etsy, Amazon, markets and retail alike")]),
@@ -52,8 +52,8 @@ SCENES = [
    ("Their name and address must appear on your label. For Great Britain they must be based in the UK, and for the EU, in the EU.", "Name and address on your label, UK- or EU-based")]),
  ("SCPN and CPNP notifications", "Essential 3", "Notify <em>before</em> you sell", DARK, [
    ("Before your product goes on sale, it must be notified.", None),
-   ("In Great Britain, that's done through the Submit Cosmetic Product Notification service, known as S C P N.", "Great Britain → SCPN (OPSS)"),
-   ("In the European Union, it's the Cosmetic Product Notification Portal, the C P N P.", "European Union → CPNP"),
+   ("In Great Britain, that's done through the Submit Cosmetic Product Notification service, run by the Office for Product Safety and Standards.", "Great Britain → SCPN (OPSS)"),
+   ("In the European Union, it's the Cosmetic Product Notification Portal.", "European Union → CPNP"),
    ("Northern Ireland follows the E U route.", "Northern Ireland → CPNP"),
    ("So if you sell in both markets, you need both notifications.", "Selling in both? You need both")]),
  ("Product Information File", "Essential 4", "Inside your <em>Product Information File</em>", LIGHT, [
@@ -70,17 +70,17 @@ SCENES = [
    ("the nominal content,", "Nominal content (ml or g)"),
    ("a best before date, or a period after opening symbol,", "Best-before date or PAO symbol"),
    ("a batch number, and any precautions for use,", "Batch number + precautions"),
-   ("and a full ingredient list using I N C I names, including fragrance allergens above the labelling thresholds.", "Full INCI list incl. labelled allergens")]),
+   ("and a full ingredient list using International Nomenclature of Cosmetic Ingredients names, including fragrance allergens above the labelling thresholds.", "Full INCI list incl. labelled allergens")]),
  ("Rules keep changing", "Regulatory update", "The rules keep <em>changing</em>", LIGHT, [
    ("Regulations also keep changing.", None),
    ("In the E U, the list of fragrance allergens that may need labelling has grown from twenty-six to eighty-one.", "EU: labelled fragrance allergens 26 → 81"),
-   ("In the U K, new bans on substances such as 4 M B C and T P O have recently come into force.", "UK: new bans incl. 4-MBC and TPO"),
+   ("In the U K, new bans have recently come into force, including the U V filter four-methylbenzylidene camphor, and trimethylbenzoyl diphenylphosphine oxide, used in gel nail products.", "UK: new bans incl. 4-MBC and TPO"),
    ("Staying compliant means keeping your safety reports and labels up to date.", "Keep your CPSR and labels up to date")]),
  ("How Cosmetic Safety Pro helps", "How we help", "Compliance, <em>done for you</em>", DARK, [
    ("That's where Cosmetic Safety Pro comes in.", None),
-   ("We prepare your C P S R with a qualified Safety Assessor,", "CPSR by a qualified Safety Assessor"),
+   ("We prepare your Cosmetic Product Safety Report with a qualified Safety Assessor,", "CPSR by a qualified Safety Assessor"),
    ("act as your U K and E U Responsible Person,", "UK & EU Responsible Person"),
-   ("handle your S C P N and C P N P notifications,", "SCPN & CPNP notifications"),
+   ("handle your notifications on both the U K and E U portals,", "SCPN & CPNP notifications"),
    ("build your Product Information File, and review your labels.", "PIF + label & CLP review"),
    ("Standard reports take one to two weeks, and our express service can deliver in as little as twenty-four to forty-eight hours.", "Express CPSR in 24–48 hours")]),
  ("Free formula review", "Get started", "Start with a <em>free formula review</em>", DARK, [
@@ -104,9 +104,9 @@ def synth(tts_dir):
             gap = np.zeros(int(GAP * SR), np.float32); audio.append(gap); t += GAP
         tail = np.zeros(int(TAIL * SR), np.float32); audio.append(tail); t += TAIL
         timeline.append({"start": start, "dur": t - start, "seg": seg_times})
-    lead = np.zeros(int(0.6 * SR), np.float32)
+    lead = np.zeros(int(1.0 * SR), np.float32)
     voice = np.concatenate([lead] + audio)
-    for sc in timeline: sc["start"] += 0.6
+    for sc in timeline: sc["start"] += 1.0
     return voice, timeline
 
 JS = r"""
