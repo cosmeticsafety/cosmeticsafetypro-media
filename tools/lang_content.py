@@ -102,4 +102,23 @@ LANGS = {
      ("Wij regelen alles. Stuur ons uw formule voor een gratis check via WhatsApp,", WA),
      ("of bezoek onze website.", SITE)]),
   ]},
+ "pt": {
+  "name": "Portuguese", "flag": "PT", "tts": ("kokoro", "pf_dora", "pt"),
+  "scenes": [
+   ("Conformidade UE e Reino Unido", "Vende <em>cosméticos</em> na Europa?", True, [
+     ("Vende cuidados de pele, perfumes ou autobronzeadores na Europa? Esta é a sua lista de verificação.", None)]),
+   ("União Europeia", "O que precisa na <em>UE</em>", False, [
+     ("Na União Europeia, cada produto precisa de:", None),
+     ("uma pessoa responsável estabelecida na UE,", "Pessoa responsável UE"),
+     ("um relatório de segurança, assinado por um avaliador qualificado,", "Relatório de segurança (CPSR)"),
+     ("um ficheiro de informações do produto,", "Ficheiro de informações (PIF)"),
+     ("e uma notificação no portal europeu antes da venda.", "Notificação CPNP")]),
+   ("Reino Unido", "Vende na <em>Grã-Bretanha</em>?", False, [
+     ("Para a Grã-Bretanha, precisa também de uma pessoa responsável no Reino Unido", "Pessoa responsável UK"),
+     ("e de uma notificação britânica.", "Notificação SCPN"),
+     ("E atenção aos alergénios dos perfumes, ao retinol e ao fator de proteção solar.", "Alergénios · retinol · FPS")]),
+   ("Cosmetic Safety Pro", "Análise <em>gratuita</em> da sua fórmula", True, [
+     ("Nós tratamos de tudo. Envie-nos a sua fórmula para uma análise gratuita pelo WhatsApp,", WA),
+     ("ou visite o nosso site.", SITE)]),
+  ]},
 }
