@@ -19,6 +19,19 @@ LOGO = "data:image/png;base64," + base64.b64encode(open(os.path.join(ROOT, "bran
 DARK = "--bg:#0A2350;--bg2:#13306A;--ink:#F3F6FA;--mint:#7CC47E;--mute:rgba(243,246,250,.74);--line:rgba(124,196,126,.30)"
 LIGHT = "--bg:#F2F6F9;--bg2:#FFFFFF;--ink:#022356;--mint:#0B6A80;--mute:rgba(2,35,86,.70);--line:rgba(11,106,128,.24)"
 
+def _v(bg, card, ink, acc):
+    def rgba(h, a):
+        h = h.lstrip('#'); return "rgba(%d,%d,%d,%s)" % (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16), a)
+    return f"--bg:{bg};--bg2:{card};--ink:{ink};--mint:{acc};--mute:{rgba(ink,.74)};--line:{rgba(acc,.30)}"
+
+# Each language gets its own (dark, light) palette pair. fr/de use the brand navy.
+PALETTES = {
+ "it": (_v("#3B1410", "#52201A", "#FBF1EC", "#F2A65A"), _v("#FBF3EA", "#FFFFFF", "#3B1410", "#B5452B")),  # terracotta + apricot
+ "es": (_v("#2A1B3D", "#3A2854", "#FBF6FF", "#FFC857"), _v("#FFF8E6", "#FFFFFF", "#2A1B3D", "#B4541A")),  # aubergine + saffron
+ "nl": (_v("#2B1A0E", "#3D2716", "#FFF4EA", "#FF9F43"), _v("#FFF4EA", "#FFFFFF", "#2B1A0E", "#C2410C")),  # cocoa + orange
+ "pt": (_v("#0F3B2E", "#16503F", "#F1FAF5", "#F2C14E"), _v("#EEF6F0", "#FFFFFF", "#0F3B2E", "#2E7D4F")),  # forest + gold
+}
+
 _kok = None
 def say(text, tts):
     global _kok
@@ -67,7 +80,7 @@ window.render=function(t){
 def page(lang, scenes, tl):
     css = ""; html = ""
     for i, (kicker, title, big, segs) in enumerate(scenes):
-        css += f".s{i}{{{DARK if i % 2 == 0 else LIGHT}}}"
+        dk, lt = PALETTES.get(lang, (DARK, LIGHT)); css += f".s{i}{{{dk if i % 2 == 0 else lt}}}"
         cards = "".join(
             f'<div class="item card" data-seg="{j}" style="opacity:0;padding:24px 30px"><div class="num" style="width:62px;height:62px;font-size:30px">{n}</div>'
             f'<div class="itext" style="font-size:42px">{b}</div></div>'
