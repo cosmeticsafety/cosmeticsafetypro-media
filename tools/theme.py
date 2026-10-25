@@ -54,8 +54,12 @@ THEMES = {
  "2026-10-24": ("#1A1A1A", "#262626", "#F5F0E6", "#E7C26B"),  # charcoal + gold
  "2026-10-25": ("#0E3B47", "#134B59", "#EEF7F7", "#7FE0E0"),  # ocean + aqua
  "2026-10-26": ("#ECE8F7", "#FFFFFF", "#231C3D", "#5B45C2"),  # lavender + violet
- "2026-10-27": ("#141414", "#222222", "#F7F3E8", "#FFD23F"),  # ink + yellow (update)
- "2026-10-30": ("#0B1F3A", "#132C50", "#F3F6FB", "#6FB1FF"),  # midnight + sky (update)
+ "2026-10-27": ("#1F2933", "#2A3742", "#F2F5F7", "#B8E35A"),  # slate + lime (post: Omnibus VI)
+ "2026-10-28": ("#F5EEDC", "#FFFBF1", "#2E2416", "#9A6B1F"),  # champagne + bronze (post: perfume launch)
+ "2026-10-29": ("#3B0764", "#4C1D95", "#FAF5FF", "#FCD34D"),  # violet + sunflower (post: claims)
+ "2026-10-30": ("#FFF7CC", "#FFFDF0", "#1F2A12", "#4D7C0F"),  # lemon + olive (post: PFHxA)
+ "2026-10-31": ("#134E4A", "#1B5F5A", "#F0FDFA", "#F9A8D4"),  # teal + candy pink (post: shelf life)
+ "2026-11-01": ("#F7EEF6", "#FFFFFF", "#1E1B2E", "#C026D3"),  # pink-grey + magenta (post: nano)
  "2026-11-03": ("#2A1A12", "#3A251A", "#F6EDE3", "#E3A86B"),  # espresso + amber (update)
  "2026-11-06": ("#FFF1E6", "#FFFFFF", "#2B1B14", "#C2410C"),  # peach + burnt orange (update)
  "2026-11-10": ("#16213E", "#1F2D52", "#F2F4FA", "#A5B4FC"),  # indigo + periwinkle (update)
@@ -69,6 +73,9 @@ REEL_THEMES = {
  "2026-10-24": ("#E6F1FB", "#FFFFFF", "#0B2545", "#1E6FD9"),  # sky + cobalt
  "2026-10-25": ("#F6EAD7", "#FFF8EE", "#3B2A1A", "#B4541A"),  # sand + rust
  "2026-10-26": ("#3A0D16", "#521421", "#FBEFF1", "#FF9AA9"),  # wine + rose
+ # paused English update reels keep their original palettes (moved here from THEMES on 25 Oct)
+ "2026-10-27": ("#141414", "#222222", "#F7F3E8", "#FFD23F"),  # ink + yellow (update reel, paused)
+ "2026-10-30": ("#0B1F3A", "#132C50", "#F3F6FB", "#6FB1FF"),  # midnight + sky (update reel, paused)
 }
 
 def theme_css(name, reel=False):

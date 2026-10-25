@@ -8,24 +8,24 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "posts")
 os.makedirs(OUT, exist_ok=True)
 
 POSTS = [
- ("2026-10-20-etsy-cpsr", "FAQ · Small brands", "Selling on Etsy or Amazon? You still need a <em>CPSR</em>.",
-  ["Required for every cosmetic sold in the UK &amp; EU", "Same rules for kitchen-table makers and global brands",
-   "Free, confidential formula review", "Express reports in 24–48 hours"]),
- ("2026-10-21-cpnp", "EU market · CPNP", "Notify the <em>CPNP</em> before you sell in the EU.",
-  ["Product name and category", "EU Responsible Person details", "Frame formulation or exact composition",
-   "Label and packaging artwork", "Any nanomaterials or CMR substances"]),
- ("2026-10-22-pif", "Checklist · PIF", "What goes inside your <em>Product Information File</em>?",
-  ["Product description", "Cosmetic Product Safety Report (CPSR)", "Manufacturing method + GMP statement",
-   "Proof of label claims", "Animal testing data"]),
- ("2026-10-23-benefits", "Safety assessment", "5 reasons your brand needs a <em>safety assessment</em>.",
-  ["Legal access to UK &amp; EU markets", "Consumer safety, checked by a qualified assessor", "Product liability insurance cover",
-   "Retailer and marketplace approval", "Fewer recalls, fines and relabels"]),
- ("2026-10-24-scpn", "Great Britain · SCPN", "Selling in Great Britain? Notify via <em>SCPN</em>.",
-  ["EU CPNP does not cover England, Scotland, Wales", "A UK-based Responsible Person is required",
-   "A valid CPSR must be in place", "Notify before the product goes on sale"]),
- ("2026-10-25-rp", "Responsible Person", "What does a <em>Responsible Person</em> actually do?",
-  ["Ensures a valid CPSR is in place", "Holds and maintains the PIF", "Notifies via CPNP / SCPN",
-   "Checks label compliance", "Reports serious undesirable effects"]),
+ ("2026-10-27-omnibus-vi", "⚡ Regulatory update · EU", "EU Parliament approves <em>Omnibus VI</em> for cosmetics",
+  ["Final vote 22 Oct 2026: 477 for, 59 against", "New CMR timelines replace the 18-month withdrawal",
+   "No exemption sought: 6 months to stop placing, 12 to sell out", "Next: Council adoption, then the Official Journal"]),
+ ("2026-10-28-perfume-launch", "Fragrance brands", "Launching a <em>perfume</em> in the UK or EU?",
+  ["IFRA certificate from your fragrance supplier", "Allergen data for the label and the CPSR",
+   "CPSR signed by a qualified safety assessor", "Responsible Person + CPNP / SCPN notification",
+   "Label check: INCI, warnings, batch, nominal content"]),
+ ("2026-10-29-claims", "Marketing claims", "Can you prove your <em>cosmetic claims</em>?",
+  ["Legal compliance", "Truthfulness", "Evidential support", "Honesty", "Fairness", "Informed decision-making"]),
+ ("2026-10-30-pfhxa", "⚡ Regulatory update · EU", "EU <em>PFHxA</em> limits now apply to cosmetics",
+  ["In force since 10 Oct 2026 (REACH Annex XVII)", "PFHxA + salts: under 25 ppb in the formula",
+   "PFHxA-related substances: under 1,000 ppb", "Check raw materials for PFAS impurities"]),
+ ("2026-10-31-shelf-life", "Label basics", "<em>PAO</em> or best-before date? Get it right.",
+  ["Lasts 30 months or less: show a best-before date", "Lasts over 30 months: PAO jar symbol, e.g. 12M",
+   "Stability testing must back the shelf life", "Both are checked in your CPSR"]),
+ ("2026-11-01-nano", "Nanomaterials", "Using <em>nano</em> ingredients? Notify 6 months early.",
+  ["EU: notify via CPNP 6 months before sale", "GB: notify OPSS 6 months before sale",
+   "List them on the label as [nano]", "Safety data must cover the nano form"]),
 ]
 
 def page_html(body, w, h, name):
@@ -81,5 +81,5 @@ def render(pairs, w=1080, h=1350):
         b.close()
 
 if __name__ == "__main__":
-    pairs = [(n, list_post(k, t, i)) for n, k, t, i in POSTS] + [("2026-10-26-uk-vs-eu", compare_post())]
+    pairs = [(n, list_post(k, t, i)) for n, k, t, i in POSTS]  # compare_post() made 2026-10-26-uk-vs-eu
     render(pairs)
