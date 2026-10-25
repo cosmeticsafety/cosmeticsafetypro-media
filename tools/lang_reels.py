@@ -26,6 +26,7 @@ def _v(bg, card, ink, acc):
 
 # Each language gets its own (dark, light) palette pair. fr/de use the brand navy.
 PALETTES = {
+ "de": (_v("#14181F", "#1F2530", "#F2F4F8", "#4FB3FF"), _v("#EEF3F8", "#FFFFFF", "#14181F", "#1F6FD1")),  # graphite + electric blue
  "it": (_v("#3B1410", "#52201A", "#FBF1EC", "#F2A65A"), _v("#FBF3EA", "#FFFFFF", "#3B1410", "#B5452B")),  # terracotta + apricot
  "es": (_v("#2A1B3D", "#3A2854", "#FBF6FF", "#FFC857"), _v("#FFF8E6", "#FFFFFF", "#2A1B3D", "#B4541A")),  # aubergine + saffron
  "nl": (_v("#2B1A0E", "#3D2716", "#FFF4EA", "#FF9F43"), _v("#FFF4EA", "#FFFFFF", "#2B1A0E", "#C2410C")),  # cocoa + orange
