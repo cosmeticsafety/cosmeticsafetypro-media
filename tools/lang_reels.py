@@ -74,7 +74,9 @@ window.render=function(t){
   const T=window.TL; let cur=0; for(let i=0;i<T.length;i++) if(t>=T[i].start) cur=i;
   document.querySelectorAll('.scene').forEach((el,i)=>{
     const s=T[i], lt=t-s.start; let o=i===cur?Math.min(ease(lt/0.45),1-ease((lt-(s.dur-0.4))/0.4)):0;
-    if(i===0&&t<s.start) o=ease(t/0.6);
+    if(i===0&&i===cur){ // intro is fully visible from frame 0 so the auto thumbnail is never black
+      o=1-ease((lt-(s.dur-0.4))/0.4); el.style.opacity=o; el.style.visibility='visible';
+      el.querySelectorAll('.ttl').forEach(h=>h.style.transform='none'); return;}
     if(i===T.length-1&&i===cur) o=Math.min(1,ease(lt/0.45));
     el.style.opacity=Math.max(0,o); el.style.visibility=o>0?'visible':'hidden'; if(i!==cur&&!(i===0&&t<s.start)) return;
     el.querySelectorAll('.ttl').forEach(h=>{const p=ease((Math.max(lt,0))/0.7); h.style.transform=`translateY(${(1-p)*60}px)`;});
