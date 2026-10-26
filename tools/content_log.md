@@ -47,3 +47,8 @@ User saw a post and reel on the same day in the same colour theme and asked that
 
 ## Blog check
 - 25 Oct 2026: WebFetch of cosmeticsafetypro.com/blogs/ was not permitted (permission request timed out in unattended run); no new blog used this week. Retry next run.
+
+## Networks (from 26 Oct 2026) — Metricool Pro
+Every image post and reel goes to Instagram + Facebook + LinkedIn in ONE Metricool post (facebookData type POST/REEL; linkedinData type post). YouTube Shorts stay separate. Captions use the full URL https://cosmeticsafetypro.com (no "link in bio").
+26 Oct: back-filled all earlier Instagram content (6 posts 20–25 Oct + reels 19–23 Oct, fr, de) to Facebook + LinkedIn, 15:15–21:15 every 30 min. All queued IG posts/reels (26 Oct–17 Nov) got FB + LinkedIn added.
+Language reels: intro scene is fully visible from frame 0 (no fade from black) so auto thumbnails aren't black. it re-rendered 26 Oct; es/nl/pt due 27 Oct; de was posted manually with the old version.
