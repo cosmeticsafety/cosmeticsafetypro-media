@@ -27,7 +27,7 @@ LANGS = {
      ("ou rendez-vous sur notre site.", SITE)]),
   ]},
  "de": {
-  "name": "German", "flag": "DE", "tts": ("espeak", "mb-de3"),
+  "name": "German", "flag": "DE", "tts": ("piper", "de_DE-thorsten-high"),
   "scenes": [
    ("EU- &amp; UK-Konformität", "Sie verkaufen <em>Kosmetik</em> in Europa?", True, [
      ("Sie verkaufen Hautpflege, Parfüm oder Selbstbräuner in Europa? Hier ist Ihre Checkliste.", None)]),
@@ -84,7 +84,7 @@ LANGS = {
      ("o visite nuestra web.", SITE)]),
   ]},
  "nl": {
-  "name": "Dutch", "flag": "NL", "tts": ("espeak", "mb-nl3"),
+  "name": "Dutch", "flag": "NL", "tts": ("piper", "nl_BE-nathalie-medium"),
   "scenes": [
    ("EU- &amp; VK-naleving", "Verkoopt u <em>cosmetica</em> in Europa?", True, [
      ("Verkoopt u huidverzorging, parfum of zelfbruiners in Europa? Dit is uw checklist.", None)]),

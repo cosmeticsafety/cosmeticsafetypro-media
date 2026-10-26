@@ -34,6 +34,7 @@ PALETTES = {
 }
 
 _kok = None
+PIPER_DIR = os.environ.get("PIPER_DIR", "")
 def say(text, tts):
     global _kok
     if tts[0] == "kokoro":
@@ -41,6 +42,13 @@ def say(text, tts):
         if _kok is None:
             _kok = Kokoro(os.path.join(TTS_DIR, "kokoro-q8.onnx"), os.path.join(TTS_DIR, "voices.bin"))
         s, sr = _kok.create(text, voice=tts[1], lang=tts[2], speed=1.12)
+    elif tts[0] == "piper":
+        tmp = "/tmp/_piper.wav"
+        model = os.path.join(PIPER_DIR, tts[1] + ".onnx")
+        subprocess.run(["python3", "-m", "piper", "-m", model, "-f", tmp, "--length-scale", str(tts[2] if len(tts) > 2 else 0.92)],
+                       input=text.encode(), check=True, capture_output=True)
+        s, sr = sf.read(tmp, dtype="float32")
+        if s.ndim > 1: s = s.mean(1)
     else:
         tmp = "/tmp/_esp.wav"
         subprocess.run(["espeak-ng", "-v", tts[1], "-s", "165", "-w", tmp, text], check=True, capture_output=True)
