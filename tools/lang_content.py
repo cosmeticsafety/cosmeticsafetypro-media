@@ -121,4 +121,23 @@ LANGS = {
      ("Nós tratamos de tudo. Envie-nos a sua fórmula para uma análise gratuita pelo WhatsApp,", WA),
      ("ou visite o nosso site.", SITE)]),
   ]},
+ "pl": {
+  "name": "Polish", "flag": "PL", "tts": ("piper", "pl_PL-gosia-medium"),
+  "scenes": [
+   ("Zgodność UE i Wielka Brytania", "Sprzedajesz <em>kosmetyki</em> w Europie?", True, [
+     ("Sprzedajesz kosmetyki, perfumy lub samoopalacze w Europie? Oto Twoja lista kontrolna.", None)]),
+   ("Unia Europejska", "Czego potrzebujesz w <em>UE</em>", False, [
+     ("W Unii Europejskiej każdy produkt potrzebuje:", None),
+     ("osoby odpowiedzialnej z siedzibą w UE,", "Osoba odpowiedzialna UE"),
+     ("raportu bezpieczeństwa, podpisanego przez wykwalifikowanego oceniającego,", "Raport bezpieczeństwa (CPSR)"),
+     ("dokumentacji informacyjnej produktu,", "Dokumentacja produktu (PIF)"),
+     ("oraz zgłoszenia w europejskim portalu przed sprzedażą.", "Zgłoszenie CPNP")]),
+   ("Wielka Brytania", "Sprzedajesz w <em>Wielkiej Brytanii</em>?", False, [
+     ("W Wielkiej Brytanii potrzebujesz też osoby odpowiedzialnej w Zjednoczonym Królestwie", "Osoba odpowiedzialna UK"),
+     ("i brytyjskiego zgłoszenia.", "Zgłoszenie SCPN"),
+     ("Uważaj też na alergeny zapachowe, retinol i filtr przeciwsłoneczny.", "Alergeny · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Bezpłatna</em> analiza receptury", True, [
+     ("Zajmiemy się wszystkim. Wyślij nam recepturę do bezpłatnej analizy przez WhatsApp,", WA),
+     ("lub odwiedź naszą stronę.", SITE)]),
+  ]},
 }

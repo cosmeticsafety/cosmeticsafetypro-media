@@ -30,6 +30,7 @@ PALETTES = {
  "it": (_v("#3B1410", "#52201A", "#FBF1EC", "#F2A65A"), _v("#FBF3EA", "#FFFFFF", "#3B1410", "#B5452B")),  # terracotta + apricot
  "es": (_v("#2A1B3D", "#3A2854", "#FBF6FF", "#FFC857"), _v("#FFF8E6", "#FFFFFF", "#2A1B3D", "#B4541A")),  # aubergine + saffron
  "nl": (_v("#2B1A0E", "#3D2716", "#FFF4EA", "#FF9F43"), _v("#FFF4EA", "#FFFFFF", "#2B1A0E", "#C2410C")),  # cocoa + orange
+ "pl": (_v("#0E2A33", "#173C47", "#F2F8F9", "#FF7A6B"), _v("#F3F8F9", "#FFFFFF", "#0E2A33", "#C2453A")),  # slate teal + coral
  "pt": (_v("#0F3B2E", "#16503F", "#F1FAF5", "#F2C14E"), _v("#EEF6F0", "#FFFFFF", "#0F3B2E", "#2E7D4F")),  # forest + gold
 }
 
