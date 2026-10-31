@@ -32,6 +32,7 @@ PALETTES = {
  "nl": (_v("#2B1A0E", "#3D2716", "#FFF4EA", "#FF9F43"), _v("#FFF4EA", "#FFFFFF", "#2B1A0E", "#C2410C")),  # cocoa + orange
  "pl": (_v("#0E2A33", "#173C47", "#F2F8F9", "#FF7A6B"), _v("#F3F8F9", "#FFFFFF", "#0E2A33", "#C2453A")),  # slate teal + coral
  "pt": (_v("#0F3B2E", "#16503F", "#F1FAF5", "#F2C14E"), _v("#EEF6F0", "#FFFFFF", "#0F3B2E", "#2E7D4F")),  # forest + gold
+ "sv": (_v("#0B2545", "#13315C", "#F4F7FB", "#FFD23F"), _v("#F4F7FB", "#FFFFFF", "#0B2545", "#B88A00")),  # deep blue + yellow
 }
 
 _kok = None

@@ -140,4 +140,23 @@ LANGS = {
      ("Zajmiemy się wszystkim. Wyślij nam recepturę do bezpłatnej analizy przez WhatsApp,", WA),
      ("lub odwiedź naszą stronę.", SITE)]),
   ]},
+ "sv": {
+  "name": "Swedish", "flag": "SE", "tts": ("piper", "sv_SE-alma-medium"),
+  "scenes": [
+   ("EU och Storbritannien", "Säljer du <em>kosmetika</em> i Europa?", True, [
+     ("Säljer du kosmetika, parfym eller brun utan sol i Europa? Här är din checklista.", None)]),
+   ("Europeiska unionen", "Det här behöver du i <em>EU</em>", False, [
+     ("I EU behöver varje produkt:", None),
+     ("en ansvarig person i EU,", "Ansvarig person i EU"),
+     ("en säkerhetsrapport, signerad av en behörig bedömare,", "Säkerhetsrapport (CPSR)"),
+     ("en produktinformationsfil,", "Produktinformationsfil (PIF)"),
+     ("och en anmälan i den europeiska portalen innan försäljning.", "CPNP-anmälan")]),
+   ("Storbritannien", "Säljer du i <em>Storbritannien</em>?", False, [
+     ("I Storbritannien behöver du dessutom en ansvarig person i Storbritannien", "Ansvarig person i UK"),
+     ("och en brittisk anmälan.", "SCPN-anmälan"),
+     ("Var också uppmärksam på doftallergener, retinol och solskydd.", "Allergener · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Kostnadsfri</em> granskning av receptet", True, [
+     ("Vi tar hand om allt. Skicka ditt recept för en kostnadsfri granskning via WhatsApp,", WA),
+     ("eller besök vår webbplats.", SITE)]),
+  ]},
 }
