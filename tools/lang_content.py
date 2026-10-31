@@ -159,4 +159,23 @@ LANGS = {
      ("Vi tar hand om allt. Skicka ditt recept för en kostnadsfri granskning via WhatsApp,", WA),
      ("eller besök vår webbplats.", SITE)]),
   ]},
+ "da": {
+  "name": "Danish", "flag": "DK", "tts": ("piper", "da_DK-talesyntese-medium"),
+  "scenes": [
+   ("EU og Storbritannien", "Sælger du <em>kosmetik</em> i Europa?", True, [
+     ("Sælger du hudpleje, parfume eller selvbruner i Europa? Her er din tjekliste.", None)]),
+   ("Den Europæiske Union", "Det skal du have i <em>EU</em>", False, [
+     ("I EU skal hvert produkt have:", None),
+     ("en ansvarlig person med base i EU,", "Ansvarlig person i EU"),
+     ("en sikkerhedsrapport, underskrevet af en kvalificeret vurderingsekspert,", "Sikkerhedsrapport (CPSR)"),
+     ("en produktinformationsfil,", "Produktinformationsfil (PIF)"),
+     ("og en anmeldelse i den europæiske portal, før salget starter.", "CPNP-anmeldelse")]),
+   ("Storbritannien", "Sælger du i <em>Storbritannien</em>?", False, [
+     ("I Storbritannien skal du desuden have en ansvarlig person i Storbritannien", "Ansvarlig person i UK"),
+     ("og en britisk anmeldelse.", "SCPN-anmeldelse"),
+     ("Hold også øje med duftallergener, retinol og solbeskyttelse.", "Allergener · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Gratis</em> gennemgang af din formel", True, [
+     ("Vi klarer det hele. Send os din formel til en gratis gennemgang via WhatsApp,", WA),
+     ("eller besøg vores hjemmeside.", SITE)]),
+  ]},
 }
