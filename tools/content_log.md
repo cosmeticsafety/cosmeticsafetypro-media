@@ -15,7 +15,7 @@ Media public URL base: https://raw.githubusercontent.com/cosmeticsafety/cosmetic
 
 ## Topics used
 Posts: Etsy/Amazon need CPSR; CPNP notification; PIF contents; 5 benefits of safety assessment; SCPN for GB; Responsible Person duties; UK vs EU at a glance
-Posts week 27 Oct–1 Nov (English reels paused; image posts only): 27 Omnibus VI approved by EP (update); 28 perfume launch checklist; 29 6 common criteria for claims; 30 PFHxA limits apply (update); 31 PAO vs best-before; 1 Nov nanomaterial 6-month notification
+Posts week 27 Oct–1 Nov (English reels paused; image posts only): 27 Omnibus VI approved by EP (update); 28 perfume launch checklist; 29 6 common criteria for claims; 30 PFHxA limits apply (update); 31 PAO vs best-before; 1 Nov nanomaterial 6-month notification; 3 Nov SUE reporting (cosmetovigilance)
 Reels: 3 things before selling in UK; Etsy myth vs fact; CPNP in 4 steps; PIF audit-ready; label compliance checklist; SCPN vs CPNP; what is a Responsible Person; how long a CPSR takes
 
 ## Weekly reel mix (from week of 27 Oct 2026)
@@ -64,3 +64,6 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 31 Oct sv reel: deep blue + yellow, built 31 Oct 08:00
 1 Nov da reel: Danish red + peach (#3A0A10 / #FFB38A), 40.8 s, built 31 Oct ~21:40 PKT; IG+FB+LI 16:00 + YT Short 16:00. 1 Nov 18:00 post (nanomaterials) already existed — skipped.
 31 Oct run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted (permission timed out); no blog used.
+3 Nov post (18:00 IG+FB+LI): SUE reporting / cosmetovigilance (Art. 23; GB SUE form to OPSS — gov.uk) — stone + amethyst (#EDEAE4/#7A3E9D). THEMES["2026-11-03"] espresso+amber (paused IFRA 52 reel) moved to REEL_THEMES.
+3 Nov cs reel: ink navy + Czech red (#12203F / #FF5C5C), 44.9 s, Piper jirka length-scale 0.74; IG+FB+LI 16:00 + YT Short 16:00. Built 2 Nov ~21:45 PKT.
+2 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used.
