@@ -8,24 +8,10 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "posts")
 os.makedirs(OUT, exist_ok=True)
 
 POSTS = [
- ("2026-10-27-omnibus-vi", "⚡ Regulatory update · EU", "EU Parliament approves <em>Omnibus VI</em> for cosmetics",
-  ["Final vote 22 Oct 2026: 477 for, 59 against", "New CMR timelines replace the 18-month withdrawal",
-   "No exemption sought: 6 months to stop placing, 12 to sell out", "Next: Council adoption, then the Official Journal"]),
- ("2026-10-28-perfume-launch", "Fragrance brands", "Launching a <em>perfume</em> in the UK or EU?",
-  ["IFRA certificate from your fragrance supplier", "Allergen data for the label and the CPSR",
-   "CPSR signed by a qualified safety assessor", "Responsible Person + CPNP / SCPN notification",
-   "Label check: INCI, warnings, batch, nominal content"]),
- ("2026-10-29-claims", "Marketing claims", "Can you prove your <em>cosmetic claims</em>?",
-  ["Legal compliance", "Truthfulness", "Evidential support", "Honesty", "Fairness", "Informed decision-making"]),
- ("2026-10-30-pfhxa", "⚡ Regulatory update · EU", "EU <em>PFHxA</em> limits now apply to cosmetics",
-  ["In force since 10 Oct 2026 (REACH Annex XVII)", "PFHxA + salts: under 25 ppb in the formula",
-   "PFHxA-related substances: under 1,000 ppb", "Check raw materials for PFAS impurities"]),
- ("2026-10-31-shelf-life", "Label basics", "<em>PAO</em> or best-before date? Get it right.",
-  ["Lasts 30 months or less: show a best-before date", "Lasts over 30 months: PAO jar symbol, e.g. 12M",
-   "Stability testing must back the shelf life", "Both are checked in your CPSR"]),
- ("2026-11-01-nano", "Nanomaterials", "Using <em>nano</em> ingredients? Notify 6 months early.",
-  ["EU: notify via CPNP 6 months before sale", "GB: notify OPSS 6 months before sale",
-   "List them on the label as [nano]", "Safety data must cover the nano form"]),
+ ("2026-11-03-sue-reporting", "Cosmetovigilance · UK · EU", "A serious reaction to your product? <em>Report it.</em>",
+  ["SUE: hospitalisation, incapacity or a risk to life", "Responsible Person and distributors must notify without delay",
+   "EU: the authority of the country where it happened", "GB: send the SUE form to OPSS",
+   "Record it in your PIF and review the safety report"]),
 ]
 
 def page_html(body, w, h, name):

@@ -197,4 +197,23 @@ LANGS = {
      ("Hoidamme kaiken puolestasi. Lähetä reseptisi maksuttomaan tarkistukseen WhatsAppilla,", WA),
      ("tai käy verkkosivuillamme.", SITE)]),
   ]},
+ "cs": {
+  "name": "Czech", "flag": "CZ", "tts": ("piper", "cs_CZ-jirka-medium", 0.74),
+  "scenes": [
+   ("EU a Spojené království", "Prodáváte <em>kosmetiku</em> v Evropě?", True, [
+     ("Prodáváte kosmetiku nebo parfémy v Evropě? Tady je váš kontrolní seznam.", None)]),
+   ("Evropská unie", "Co potřebujete v <em>EU</em>", False, [
+     ("V Evropské unii potřebuje každý výrobek:", None),
+     ("odpovědnou osobu se sídlem v EU,", "Odpovědná osoba v EU"),
+     ("zprávu o bezpečnosti, podepsanou kvalifikovaným hodnotitelem,", "Zpráva o bezpečnosti (CPSR)"),
+     ("informační dokumentaci o výrobku,", "Informační dokumentace (PIF)"),
+     ("a oznámení na evropském portálu ještě před zahájením prodeje.", "Oznámení CPNP")]),
+   ("Spojené království", "Prodáváte i ve <em>Velké Británii</em>?", False, [
+     ("Ve Velké Británii navíc potřebujete britskou odpovědnou osobu", "Odpovědná osoba v UK"),
+     ("a britské oznámení.", "Oznámení SCPN"),
+     ("Pozor také na alergeny ve vůních, retinol a ochranu před sluncem.", "Alergeny · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Bezplatná</em> kontrola vaší receptury", True, [
+     ("Pošlete nám recepturu na bezplatnou kontrolu přes WhatsApp,", WA),
+     ("nebo navštivte náš web.", SITE)]),
+  ]},
 }

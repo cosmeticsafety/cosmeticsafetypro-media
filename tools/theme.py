@@ -60,7 +60,7 @@ THEMES = {
  "2026-10-30": ("#FFF7CC", "#FFFDF0", "#1F2A12", "#4D7C0F"),  # lemon + olive (post: PFHxA)
  "2026-10-31": ("#134E4A", "#1B5F5A", "#F0FDFA", "#F9A8D4"),  # teal + candy pink (post: shelf life)
  "2026-11-01": ("#F7EEF6", "#FFFFFF", "#1E1B2E", "#C026D3"),  # pink-grey + magenta (post: nano)
- "2026-11-03": ("#2A1A12", "#3A251A", "#F6EDE3", "#E3A86B"),  # espresso + amber (update)
+ "2026-11-03": ("#EDEAE4", "#FFFFFF", "#1F1A24", "#7A3E9D"),  # stone + amethyst (post: SUE reporting)
  "2026-11-06": ("#FFF1E6", "#FFFFFF", "#2B1B14", "#C2410C"),  # peach + burnt orange (update)
  "2026-11-10": ("#16213E", "#1F2D52", "#F2F4FA", "#A5B4FC"),  # indigo + periwinkle (update)
  "2026-11-13": ("#E8F5EF", "#FFFFFF", "#10291F", "#0F7A55"),  # mint + emerald (update)
@@ -76,6 +76,7 @@ REEL_THEMES = {
  # paused English update reels keep their original palettes (moved here from THEMES on 25 Oct)
  "2026-10-27": ("#141414", "#222222", "#F7F3E8", "#FFD23F"),  # ink + yellow (update reel, paused)
  "2026-10-30": ("#0B1F3A", "#132C50", "#F3F6FB", "#6FB1FF"),  # midnight + sky (update reel, paused)
+ "2026-11-03": ("#2A1A12", "#3A251A", "#F6EDE3", "#E3A86B"),  # espresso + amber (IFRA 52 update reel, paused; moved from THEMES 2 Nov)
 }
 
 def theme_css(name, reel=False):
