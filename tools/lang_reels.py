@@ -33,6 +33,7 @@ PALETTES = {
  "pl": (_v("#0E2A33", "#173C47", "#F2F8F9", "#FF7A6B"), _v("#F3F8F9", "#FFFFFF", "#0E2A33", "#C2453A")),  # slate teal + coral
  "pt": (_v("#0F3B2E", "#16503F", "#F1FAF5", "#F2C14E"), _v("#EEF6F0", "#FFFFFF", "#0F3B2E", "#2E7D4F")),  # forest + gold
  "sv": (_v("#0B2545", "#13315C", "#F4F7FB", "#FFD23F"), _v("#F4F7FB", "#FFFFFF", "#0B2545", "#B88A00")),  # deep blue + yellow
+ "fi": (_v("#1E1B3A", "#2A2650", "#F3F1FF", "#6EE7B7"), _v("#F2FBF7", "#FFFFFF", "#1E1B3A", "#0F8A5F")),  # aurora violet + mint
  "da": (_v("#3A0A10", "#52121B", "#FFF5EE", "#FFB38A"), _v("#FFF5EE", "#FFFFFF", "#3A0A10", "#C8102E")),  # Danish red + peach
 }
 

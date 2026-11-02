@@ -178,4 +178,23 @@ LANGS = {
      ("Vi klarer det hele. Send os din formel til en gratis gennemgang via WhatsApp,", WA),
      ("eller besøg vores hjemmeside.", SITE)]),
   ]},
+ "fi": {
+  "name": "Finnish", "flag": "FI", "tts": ("piper", "fi_FI-harri-medium", 0.83),
+  "scenes": [
+   ("EU- ja UK-vaatimukset", "Myytkö <em>kosmetiikkaa</em> Euroopassa?", True, [
+     ("Myytkö ihonhoitotuotteita, hajusteita tai itseruskettavia tuotteita Euroopassa? Tässä on tarkistuslistasi.", None)]),
+   ("Euroopan unioni", "Mitä tarvitset <em>EU:ssa</em>", False, [
+     ("Euroopan unionissa jokainen tuote tarvitsee:", None),
+     ("EU:hun sijoittautuneen vastuuhenkilön,", "Vastuuhenkilö EU"),
+     ("pätevän arvioijan allekirjoittaman turvallisuusraportin,", "Turvallisuusraportti (CPSR)"),
+     ("tuotetietoasiakirjan,", "Tuotetietoasiakirja (PIF)"),
+     ("ja ilmoituksen EU:n portaaliin ennen myyntiä.", "CPNP-ilmoitus")]),
+   ("Iso-Britannia", "Myytkö <em>Isossa-Britanniassa</em>?", False, [
+     ("Isoon-Britanniaan tarvitset lisäksi vastuuhenkilön Yhdistyneessä kuningaskunnassa", "Vastuuhenkilö UK"),
+     ("ja brittiläisen ilmoituksen.", "SCPN-ilmoitus"),
+     ("Huomioi myös hajusteallergeenit, retinoli ja aurinkosuojakerroin.", "Allergeenit · retinoli · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Maksuton</em> reseptin tarkistus", True, [
+     ("Hoidamme kaiken puolestasi. Lähetä reseptisi maksuttomaan tarkistukseen WhatsAppilla,", WA),
+     ("tai käy verkkosivuillamme.", SITE)]),
+  ]},
 }
