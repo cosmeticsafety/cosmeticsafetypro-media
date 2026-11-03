@@ -216,4 +216,23 @@ LANGS = {
      ("Pošlete nám recepturu na bezplatnou kontrolu přes WhatsApp,", WA),
      ("nebo navštivte náš web.", SITE)]),
   ]},
+ "hr": {
+  "name": "Croatian", "flag": "HR", "tts": ("file", "reels/lang/hr-voice-ttsmaker.mp3"),
+  "scenes": [
+   ("Usklađenost EU i UK", "Prodajete <em>kozmetiku</em> u Europi?", True, [
+     ("Prodajete kozmetiku, parfeme ili samopotamnjivače u Europi? Evo vašeg popisa za provjeru.", None)]),
+   ("Europska unija", "Što vam treba u <em>EU</em>", False, [
+     ("U Europskoj uniji svaki proizvod treba:", None),
+     ("odgovornu osobu sa sjedištem u EU,", "Odgovorna osoba EU"),
+     ("izvješće o sigurnosti koje potpisuje kvalificirani procjenitelj,", "Izvješće o sigurnosti (CPSR)"),
+     ("dokumentaciju s informacijama o proizvodu,", "Dokumentacija proizvoda (PIF)"),
+     ("i prijavu na europskom portalu prije prodaje.", "Prijava CPNP")]),
+   ("Velika Britanija", "Prodajete u <em>Velikoj Britaniji</em>?", False, [
+     ("Za Veliku Britaniju trebate i odgovornu osobu u Ujedinjenom Kraljevstvu", "Odgovorna osoba UK"),
+     ("i britansku prijavu.", "Prijava SCPN"),
+     ("I pazite na alergene u mirisima, retinol i zaštitni faktor.", "Alergeni · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Besplatna</em> provjera formulacije", True, [
+     ("Mi se brinemo o svemu. Pošaljite nam svoju formulaciju na besplatnu provjeru putem WhatsAppa", WA),
+     ("ili posjetite našu web stranicu.", SITE)]),
+  ]},
 }

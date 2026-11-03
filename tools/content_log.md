@@ -69,3 +69,4 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 2 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used.
 2 Nov fi reel: missed (task was off 1 Nov). Video exists in reels/lang/ (built by a catch-up session) but NOT scheduled by the routine — owner to decide.
 2 Nov 18:00 post missed (task off); replacement post 'Changed your formula? Update these' (ice + petrol) posted 3 Nov 13:00. Finnish reel posted 3 Nov 10:05.
+9 Nov hr reel: built 3 Nov from owner-supplied TTSMaker Croatian voiceover (reels/lang/hr-voice-ttsmaker.mp3) with tools/hr_reel.py; olive + lavender; 43.5 s; scheduled 9 Nov 16:00 IG+FB+LI + YT Short. Daily task: SKIP hr, already scheduled.
