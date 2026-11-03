@@ -8,10 +8,10 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "posts")
 os.makedirs(OUT, exist_ok=True)
 
 POSTS = [
- ("2026-11-03-sue-reporting", "Cosmetovigilance · UK · EU", "A serious reaction to your product? <em>Report it.</em>",
-  ["SUE: hospitalisation, incapacity or a risk to life", "Responsible Person and distributors must notify without delay",
-   "EU: the authority of the country where it happened", "GB: send the SUE form to OPSS",
-   "Record it in your PIF and review the safety report"]),
+ ("2026-11-02-formula-change", "Reformulating · UK · EU", "Changed your formula? <em>Update these.</em>",
+  ["A new or updated safety report (CPSR)", "Your Product Information File (PIF)",
+   "Your CPNP / SCPN notification", "Your label and ingredient list (INCI)",
+   "Your product claims and their evidence"]),
 ]
 
 def page_html(body, w, h, name):

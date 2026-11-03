@@ -68,3 +68,4 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 3 Nov cs reel: ink navy + Czech red (#12203F / #FF5C5C), 44.9 s, Piper jirka length-scale 0.74; IG+FB+LI 16:00 + YT Short 16:00. Built 2 Nov ~21:45 PKT.
 2 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used.
 2 Nov fi reel: missed (task was off 1 Nov). Video exists in reels/lang/ (built by a catch-up session) but NOT scheduled by the routine — owner to decide.
+2 Nov 18:00 post missed (task off); replacement post 'Changed your formula? Update these' (ice + petrol) posted 3 Nov 13:00. Finnish reel posted 3 Nov 10:05.
