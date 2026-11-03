@@ -216,6 +216,25 @@ LANGS = {
      ("Pošlete nám recepturu na bezplatnou kontrolu přes WhatsApp,", WA),
      ("nebo navštivte náš web.", SITE)]),
   ]},
+ "sk": {
+  "name": "Slovak", "flag": "SK", "tts": ("piper", "sk_SK-lili-medium", 0.8),
+  "scenes": [
+   ("EÚ a Spojené kráľovstvo", "Predávate <em>kozmetiku</em> v Európe?", True, [
+     ("Predávate kozmetiku alebo parfumy v Európe? Tu je váš kontrolný zoznam.", None)]),
+   ("Európska únia", "Čo potrebujete v <em>EÚ</em>", False, [
+     ("V Európskej únii potrebuje každý výrobok:", None),
+     ("zodpovednú osobu so sídlom v EÚ,", "Zodpovedná osoba v EÚ"),
+     ("správu o bezpečnosti, podpísanú kvalifikovaným posudzovateľom,", "Správa o bezpečnosti (CPSR)"),
+     ("informačnú dokumentáciu o výrobku,", "Informačná dokumentácia (PIF)"),
+     ("a oznámenie na európskom portáli ešte pred začatím predaja.", "Oznámenie CPNP")]),
+   ("Spojené kráľovstvo", "Predávate aj vo <em>Veľkej Británii</em>?", False, [
+     ("Vo Veľkej Británii navyše potrebujete britskú zodpovednú osobu", "Zodpovedná osoba v UK"),
+     ("a britské oznámenie.", "Oznámenie SCPN"),
+     ("Pozor aj na alergény vo vôňach, retinol a ochranu pred slnkom.", "Alergény · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Bezplatná</em> kontrola vašej receptúry", True, [
+     ("Pošlite nám receptúru na bezplatnú kontrolu cez WhatsApp,", WA),
+     ("alebo navštívte náš web.", SITE)]),
+  ]},
  "hr": {
   "name": "Croatian", "flag": "HR", "tts": ("file", "reels/lang/hr-voice-ttsmaker.mp3"),
   "scenes": [
