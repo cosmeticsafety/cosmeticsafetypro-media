@@ -15,7 +15,7 @@ Media public URL base: https://raw.githubusercontent.com/cosmeticsafety/cosmetic
 
 ## Topics used
 Posts: Etsy/Amazon need CPSR; CPNP notification; PIF contents; 5 benefits of safety assessment; SCPN for GB; Responsible Person duties; UK vs EU at a glance
-Posts week 27 Oct–1 Nov (English reels paused; image posts only): 27 Omnibus VI approved by EP (update); 28 perfume launch checklist; 29 6 common criteria for claims; 30 PFHxA limits apply (update); 31 PAO vs best-before; 1 Nov nanomaterial 6-month notification; 3 Nov SUE reporting (cosmetovigilance)
+Posts week 27 Oct–1 Nov (English reels paused; image posts only): 27 Omnibus VI approved by EP (update); 28 perfume launch checklist; 29 6 common criteria for claims; 30 PFHxA limits apply (update); 31 PAO vs best-before; 1 Nov nanomaterial 6-month notification; 3 Nov SUE reporting (cosmetovigilance); 4 Nov animal testing ban
 Reels: 3 things before selling in UK; Etsy myth vs fact; CPNP in 4 steps; PIF audit-ready; label compliance checklist; SCPN vs CPNP; what is a Responsible Person; how long a CPSR takes
 
 ## Weekly reel mix (from week of 27 Oct 2026)
@@ -70,3 +70,6 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 2 Nov fi reel: missed (task was off 1 Nov). Video exists in reels/lang/ (built by a catch-up session) but NOT scheduled by the routine — owner to decide.
 2 Nov 18:00 post missed (task off); replacement post 'Changed your formula? Update these' (ice + petrol) posted 3 Nov 13:00. Finnish reel posted 3 Nov 10:05.
 9 Nov hr reel: built 3 Nov from owner-supplied TTSMaker Croatian voiceover (reels/lang/hr-voice-ttsmaker.mp3) with tools/hr_reel.py; olive + lavender; 43.5 s; scheduled 9 Nov 16:00 IG+FB+LI + YT Short. Daily task: SKIP hr, already scheduled.
+4 Nov post (18:00 IG+FB+LI): animal testing ban (2004 finished / 2009 ingredients / 2013 full marketing ban; GB same — EC single-market page, legislation.gov.uk Art. 18) — pale sage + navy (#E8EEE6/#1E3A8A). Built 3 Nov ~21:40 PKT.
+4 Nov sk reel: deep plum + aqua (#2B1030 / #5EEAD4), 35.5 s, Piper lili length-scale 0.8; IG+FB+LI 16:00 + YT Short 16:00. Built 3 Nov ~21:40 PKT.
+3 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used.
