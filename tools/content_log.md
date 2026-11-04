@@ -15,7 +15,7 @@ Media public URL base: https://raw.githubusercontent.com/cosmeticsafety/cosmetic
 
 ## Topics used
 Posts: Etsy/Amazon need CPSR; CPNP notification; PIF contents; 5 benefits of safety assessment; SCPN for GB; Responsible Person duties; UK vs EU at a glance
-Posts week 27 Oct–1 Nov (English reels paused; image posts only): 27 Omnibus VI approved by EP (update); 28 perfume launch checklist; 29 6 common criteria for claims; 30 PFHxA limits apply (update); 31 PAO vs best-before; 1 Nov nanomaterial 6-month notification; 3 Nov SUE reporting (cosmetovigilance); 4 Nov animal testing ban
+Posts week 27 Oct–1 Nov (English reels paused; image posts only): 27 Omnibus VI approved by EP (update); 28 perfume launch checklist; 29 6 common criteria for claims; 30 PFHxA limits apply (update); 31 PAO vs best-before; 1 Nov nanomaterial 6-month notification; 3 Nov SUE reporting (cosmetovigilance); 4 Nov animal testing ban; 5 Nov INCI ingredient list rules
 Reels: 3 things before selling in UK; Etsy myth vs fact; CPNP in 4 steps; PIF audit-ready; label compliance checklist; SCPN vs CPNP; what is a Responsible Person; how long a CPSR takes
 
 ## Weekly reel mix (from week of 27 Oct 2026)
@@ -73,3 +73,6 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 4 Nov post (18:00 IG+FB+LI): animal testing ban (2004 finished / 2009 ingredients / 2013 full marketing ban; GB same — EC single-market page, legislation.gov.uk Art. 18) — pale sage + navy (#E8EEE6/#1E3A8A). Built 3 Nov ~21:40 PKT.
 4 Nov sk reel: deep plum + aqua (#2B1030 / #5EEAD4), 35.5 s, Piper lili length-scale 0.8; IG+FB+LI 16:00 + YT Short 16:00. Built 3 Nov ~21:40 PKT.
 3 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used.
+5 Nov post (18:00 IG+FB+LI) + Pinterest pin 18:05 (Cosmetic Labelling Tips): INCI ingredient list — 5 rules (Art. 19(1)(g) Reg 1223/2009, legislation.gov.uk) — buttercream + deep teal (#FBF6E9/#0F5E63). Built 4 Nov ~21:40 PKT.
+5 Nov hu reel: warm black + lime (#1C1917 / #A3E635), 40.1 s, Piper anna length-scale 0.85; IG+FB+LI+TikTok 16:00 + YT Short 16:00 + Pinterest video pin 16:10 (Cosmetic Regulations UK & EU). Built 4 Nov ~21:40 PKT.
+4 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used.
