@@ -63,6 +63,7 @@ THEMES = {
  "2026-11-02": ("#E9F2F7", "#FFFFFF", "#0F2A3D", "#0E7490"),  # ice + petrol (post: formula change, posted 3 Nov 13:00)
  "2026-11-03": ("#EDEAE4", "#FFFFFF", "#1F1A24", "#7A3E9D"),  # stone + amethyst (post: SUE reporting)
  "2026-11-04": ("#E8EEE6", "#FFFFFF", "#1B2A41", "#1E3A8A"),  # pale sage + navy (post: animal testing ban)
+ "2026-11-05": ("#FBF6E9", "#FFFFFF", "#12302F", "#0F5E63"),  # buttercream + deep teal (post: INCI list rules)
  "2026-11-06": ("#FFF1E6", "#FFFFFF", "#2B1B14", "#C2410C"),  # peach + burnt orange (update)
  "2026-11-10": ("#16213E", "#1F2D52", "#F2F4FA", "#A5B4FC"),  # indigo + periwinkle (update)
  "2026-11-13": ("#E8F5EF", "#FFFFFF", "#10291F", "#0F7A55"),  # mint + emerald (update)

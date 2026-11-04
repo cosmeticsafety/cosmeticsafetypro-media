@@ -235,6 +235,25 @@ LANGS = {
      ("Pošlite nám receptúru na bezplatnú kontrolu cez WhatsApp,", WA),
      ("alebo navštívte náš web.", SITE)]),
   ]},
+ "hu": {
+  "name": "Hungarian", "flag": "HU", "tts": ("piper", "hu_HU-anna-medium", 0.85),
+  "scenes": [
+   ("EU és Egyesült Királyság", "Kozmetikumot <em>árul</em> Európában?", True, [
+     ("Kozmetikumot vagy parfümöt árul Európában? Itt az ellenőrzőlistája.", None)]),
+   ("Európai Unió", "Ami kell az <em>EU-ban</em>", False, [
+     ("Az Európai Unióban minden terméknek kell:", None),
+     ("egy EU-ban székhellyel rendelkező felelős személy,", "Felelős személy az EU-ban"),
+     ("egy biztonsági értékelés, amelyet képesített értékelő ír alá,", "Biztonsági jelentés (CPSR)"),
+     ("egy termékinformációs dokumentáció,", "Termékinformációs dosszié (PIF)"),
+     ("és bejelentés az európai portálon még a forgalmazás előtt.", "CPNP bejelentés")]),
+   ("Egyesült Királyság", "Nagy-Britanniában <em>is</em> árul?", False, [
+     ("Nagy-Britanniában ezen felül brit felelős személy kell", "Felelős személy az UK-ban"),
+     ("és brit bejelentés.", "SCPN bejelentés")
+     ,("Figyeljen az illatanyag-allergénekre, a retinolra és a fényvédelemre is.", "Allergének · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Ingyenes</em> receptúra-ellenőrzés", True, [
+     ("Küldje el receptúráját ingyenes ellenőrzésre WhatsAppon,", WA),
+     ("vagy látogasson el weboldalunkra.", SITE)]),
+  ]},
  "hr": {
   "name": "Croatian", "flag": "HR", "tts": ("file", "reels/lang/hr-voice-ttsmaker.mp3"),
   "scenes": [

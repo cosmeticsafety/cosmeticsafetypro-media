@@ -8,10 +8,10 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "posts")
 os.makedirs(OUT, exist_ok=True)
 
 POSTS = [
- ("2026-11-04-animal-testing-ban", "Animal testing · UK · EU", "Animal testing: what <em>the law says</em>",
-  ["Finished products: no animal tests since 11 Sep 2004", "Ingredients: no animal tests since 11 Mar 2009",
-   "Marketing ban: complete since 11 Mar 2013", "Great Britain keeps the same ban",
-   "Your CPSR relies on non-animal &amp; existing data"]),
+ ("2026-11-05-inci-ingredient-list", "Labelling · INCI · UK · EU", "Writing your <em>ingredient list</em>: 5 rules",
+  ["Start with the word &ldquo;Ingredients&rdquo;", "Descending order of weight when added",
+   "Under 1%: any order, after the rest", "Nanomaterials: name followed by (nano)",
+   "Fragrance as &ldquo;parfum&rdquo; + listed allergens named"]),
 ]
 
 def page_html(body, w, h, name):
