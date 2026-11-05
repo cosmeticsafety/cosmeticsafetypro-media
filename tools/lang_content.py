@@ -254,6 +254,25 @@ LANGS = {
      ("Küldje el receptúráját ingyenes ellenőrzésre WhatsAppon,", WA),
      ("vagy látogasson el weboldalunkra.", SITE)]),
   ]},
+ "ro": {
+  "name": "Romanian", "flag": "RO", "tts": ("piper", "ro_RO-mihai-medium", 0.9),
+  "scenes": [
+   ("Conformitate UE și Marea Britanie", "Vindeți <em>cosmetice</em> în Europa?", True, [
+     ("Vindeți cosmetice sau parfumuri în Europa? Iată lista dumneavoastră de verificare.", None)]),
+   ("Uniunea Europeană", "Ce vă trebuie în <em>UE</em>", False, [
+     ("În Uniunea Europeană, fiecare produs are nevoie de:", None),
+     ("o persoană responsabilă cu sediul în UE,", "Persoană responsabilă în UE"),
+     ("un raport de siguranță semnat de un evaluator calificat,", "Raport de siguranță (CPSR)"),
+     ("un dosar cu informații despre produs,", "Dosarul produsului (PIF)"),
+     ("și notificarea pe portalul european înainte de vânzare.", "Notificare CPNP")]),
+   ("Marea Britanie", "Vindeți și în <em>Marea Britanie</em>?", False, [
+     ("Pentru Marea Britanie aveți nevoie și de o persoană responsabilă britanică", "Persoană responsabilă în UK"),
+     ("și de notificarea britanică.", "Notificare SCPN"),
+     ("Atenție și la alergenii din parfumuri, la retinol și la protecția solară.", "Alergeni · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "Verificare <em>gratuită</em> a formulei", True, [
+     ("Trimiteți-ne formula pentru o verificare gratuită pe WhatsApp", WA),
+     ("sau vizitați site-ul nostru.", SITE)]),
+  ]},
  "hr": {
   "name": "Croatian", "flag": "HR", "tts": ("file", "reels/lang/hr-voice-ttsmaker.mp3"),
   "scenes": [
