@@ -76,3 +76,6 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 5 Nov post (18:00 IG+FB+LI) + Pinterest pin 18:05 (Cosmetic Labelling Tips): INCI ingredient list — 5 rules (Art. 19(1)(g) Reg 1223/2009, legislation.gov.uk) — buttercream + deep teal (#FBF6E9/#0F5E63). Built 4 Nov ~21:40 PKT.
 5 Nov hu reel: warm black + lime (#1C1917 / #A3E635), 40.1 s, Piper anna length-scale 0.85; IG+FB+LI+TikTok 16:00 + YT Short 16:00 + Pinterest video pin 16:10 (Cosmetic Regulations UK & EU). Built 4 Nov ~21:40 PKT.
 4 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used.
+6 Nov post (18:00 IG+FB+LI) + Pinterest pin 18:05 (CPSR & Safety Assessment): GMP / ISO 22716 in 5 points (Art. 8 + Art. 11(2)(c) Reg 1223/2009, legislation.gov.uk; ISO 22716 designated standard GB — gov.uk notice 1 Jan 2021) — peach + burnt orange (#FFF1E6/#C2410C). Built 5 Nov ~21:40 PKT.
+6 Nov ro reel: petrol blue + rose (#0C4A6E / #FDA4AF), 42.7 s, Piper mihai length-scale 0.9; IG+FB+LI+TikTok 15:00 + YT Short 15:00 + Pinterest video pin 15:10 (Cosmetic Regulations UK & EU). Built 5 Nov ~21:40 PKT.
+5 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used.
