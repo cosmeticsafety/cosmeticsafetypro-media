@@ -83,3 +83,9 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 7 Nov bg reel: royal blue + tangerine (#1E2A78 / #FF8A3D), 40.8 s, Piper dimitar 0.9; IG+FB+LI+TikTok 15:00 + YT Short 15:00 + Pinterest 15:10.
 8 Nov post (18:00 IG+FB+LI) + Pinterest 18:05 (CPSR & Safety Assessment): CPSR Part A / Part B (Annex I Reg 1223/2009) — sky + crimson (#E6F1FB/#B91C1C).
 8 Nov el reel: charcoal green + peach (#1F2A1F / #FFC9A8), 41.6 s, Piper rapunzelina 0.9; IG+FB+LI+TikTok 15:00 + YT Short 15:00 + Pinterest 15:10. Daily task: 7 and 8 Nov fully done — next is 9 Nov (hr already scheduled; add post + hr Pinterest pin only).
+
+## Engagement changes (owner approved 7 Nov 2026; from 9 Nov)
+- Reels: hook question on screen from frame 0, voice starts within ~0.25 s (lang_reels LEAD 0.25, hr_reel PAD 0.2, no big logo on scene 0); 3.4 s end card "Save this / Follow for UK & EU rules / Free check on WhatsApp" (reels.py built in; lang_reels.py via with_end() + CTA dict — add a CTA entry for every new language).
+- Captions: "📌 Save this for your launch · Follow for UK & EU cosmetic rules" line before WhatsApp. firstCommentText = one easy question (reel, Short, image post; never Pinterest). YouTube titles "<topic> | Subscribe for Weekly UK & EU Rules #Shorts" when under 100 chars; description has "🔔 Subscribe for weekly UK & EU cosmetic rules."
+- Rebuilt and re-uploaded 7 Nov: 9 Nov hr reel (46.2 s) + Short; 15 Nov rp-r, 16 Nov pif-r, 17 Nov how-long-r reels + Shorts (captions, first comments, YouTube titles updated). Commit 1ad6f3b. Pinterest pins for 9 and 15–17 Nov still to be added by the daily task.
+- Owner's part: pin the first-comment question on IG/TikTok/YouTube if possible and reply to comments; engage with 5–10 brand accounts a day.
