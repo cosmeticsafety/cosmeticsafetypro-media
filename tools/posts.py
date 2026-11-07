@@ -8,11 +8,18 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "posts")
 os.makedirs(OUT, exist_ok=True)
 
 POSTS = [
- ("2026-11-06-gmp-iso-22716", "Manufacturing · GMP · UK · EU", "Who made your <em>cosmetic</em>? GMP in 5 points",
-  ["Art. 8: every cosmetic must be made under GMP", "Follow ISO 22716 = GMP presumed (EU &amp; GB)",
-   "PIF needs the manufacturing method + GMP statement",
-   "Covers staff, premises, equipment &amp; raw materials",
-   "Batch records, deviations, complaints &amp; recalls"]),
+ ("2026-11-07-fragrance-allergens", "Perfume · Labelling · EU", "Fragrance <em>allergens</em>: 80+ now on the label",
+  ["Reg. (EU) 2023/1545 expands the allergen list to 80+",
+   "Declare by name in the ingredients (INCI) list",
+   "Above 0.001% leave-on / 0.01% rinse-off",
+   "New products placed on the EU market after 31 Jul 2026",
+   "Older stock may stay on sale until 31 Jul 2028"]),
+ ("2026-11-08-cpsr-part-a-b", "CPSR · Safety assessment · UK · EU", "Inside a <em>CPSR</em>: Part A and Part B",
+  ["Part A = the safety information (the data)",
+   "Composition, stability, microbiological quality, impurities",
+   "Exposure + toxicological profile of each ingredient",
+   "Part B = the safety assessment (the conclusion)",
+   "Signed by a qualified assessor, with label warnings"]),
 ]
 
 def page_html(body, w, h, name):

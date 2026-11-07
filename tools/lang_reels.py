@@ -39,6 +39,8 @@ PALETTES = {
  "sk": (_v("#2B1030", "#3D1A44", "#FBF3FC", "#5EEAD4"), _v("#F0FBF9", "#FFFFFF", "#2B1030", "#0F766E")),  # deep plum + aqua
  "hu": (_v("#1C1917", "#292524", "#F7F5F2", "#A3E635"), _v("#F7FBEF", "#FFFFFF", "#1C1917", "#4D7C0F")),  # warm black + lime
  "ro": (_v("#0C4A6E", "#115E82", "#F0F9FF", "#FDA4AF"), _v("#FFF1F3", "#FFFFFF", "#0C4A6E", "#BE185D")),  # petrol blue + rose
+ "bg": (_v("#1E2A78", "#2B3A9C", "#F4F6FF", "#FF8A3D"), _v("#EEF1FF", "#FFFFFF", "#1E2A78", "#C2410C")),  # royal blue + tangerine
+ "el": (_v("#1F2A1F", "#2D3B2D", "#F6FAF3", "#FFC9A8"), _v("#FFF6EF", "#FFFFFF", "#1F2A1F", "#B4532A")),  # charcoal green + peach
  "cs": (_v("#12203F", "#1C2E57", "#F5F7FB", "#FF5C5C"), _v("#F6F7FB", "#FFFFFF", "#12203F", "#D7141A")),  # ink navy + Czech red
 }
 
