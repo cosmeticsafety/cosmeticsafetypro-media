@@ -55,11 +55,11 @@ function show(el,t0,t,dur=0.6,dy=60){const p=ease((t-t0)/dur);el.style.opacity=p
 function hide(el,t1,t,dur=0.4){const p=ease((t-t1)/dur);if(t>=t1){el.style.opacity=Math.min(+el.style.opacity,1-p);}}
 window.render=function(t){
   const D=window.D, n=D.n;
-  const listStart=3.2, itemGap=1.0, ctaStart=listStart+0.8+n*itemGap+1.6, total=ctaStart+3.4;
+  const listStart=3.2, itemGap=1.0, ctaStart=listStart+0.8+n*itemGap+1.6, total=ctaStart+4.0;
   document.getElementById('bar').style.width=(Math.min(t/total,1)*100)+'%';
   // hook
   const hk=document.getElementById('hookK'), hh=document.getElementById('hookH');
-  show(hk,0.1,t); show(hh,0.35,t,0.8,90); hide(hk,listStart-0.5,t); hide(hh,listStart-0.5,t);
+  show(hk,-1,t); show(hh,-1,t,0.8,90); /* hook fully visible from frame 0 */ hide(hk,listStart-0.5,t); hide(hh,listStart-0.5,t);
   // list
   const lk=document.getElementById('listK'); show(lk,listStart,t); hide(lk,ctaStart-0.4,t);
   document.querySelectorAll('.ri').forEach((el,i)=>{show(el,listStart+0.6+i*itemGap,t,0.55,0);
@@ -94,9 +94,9 @@ def html(reel):
  </div>
  <div id="src" class="L" style="top:1480px;opacity:0;font-size:26px;color:var(--mute);letter-spacing:.02em">{("Source: " + source) if source else ""}</div>
  <div class="L" style="top:700px;text-align:left">
-   <h1 id="ctaA" style="opacity:0;font-size:104px;margin-bottom:46px">Get compliant <em>with confidence.</em></h1>
-   <div id="ctaB" style="opacity:0;display:inline-block" class="cta"><span style="font-size:40px;padding:6px 10px;display:inline-block">Free formula review</span></div>
-   <div id="ctaC" style="opacity:0;margin-top:56px;font-size:40px;color:var(--mute);line-height:1.5">WhatsApp <b style="color:var(--ink)">{WHATSAPP}</b><br>{SITE}</div>
+   <h1 id="ctaA" style="opacity:0;font-size:104px;margin-bottom:46px"><em>Save this</em> for your launch.</h1>
+   <div id="ctaB" style="opacity:0;display:inline-block" class="cta"><span style="font-size:40px;padding:6px 10px;display:inline-block">Follow for UK &amp; EU cosmetic rules</span></div>
+   <div id="ctaC" style="opacity:0;margin-top:56px;font-size:40px;color:var(--mute);line-height:1.5">Free formula check · WhatsApp<br><b style="color:var(--ink)">{WHATSAPP}</b><br>{SITE}</div>
  </div>
 </div>
 <script>window.D={{n:{len(items)}}};{JS}</script></body></html>"""

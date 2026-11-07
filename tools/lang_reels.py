@@ -13,7 +13,8 @@ from lang_content import LANGS
 import music
 
 W, H, FPS, SR = 1080, 1920, 30, 44100
-GAP, TAIL, LEAD = 0.3, 0.5, 1.0
+GAP, TAIL, LEAD = 0.3, 0.5, 0.25  # LEAD short: voice starts almost immediately (hook in first 2 s)
+END = 3.4  # end card: save / follow / WhatsApp
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 LOGO = "data:image/png;base64," + base64.b64encode(open(os.path.join(ROOT, "branding", "logo-crop.png"), "rb").read()).decode()
 DARK = "--bg:#0A2350;--bg2:#13306A;--ink:#F3F6FA;--mint:#7CC47E;--mute:rgba(243,246,250,.74);--line:rgba(124,196,126,.30)"
@@ -68,6 +69,21 @@ def say(text, tts):
     s = resample_poly(np.asarray(s, np.float32), SR, sr).astype(np.float32)
     return s / (np.abs(s).max() or 1) * 0.85
 
+# End-card call to action, per language: (kicker, title, [save line, follow line, WhatsApp line]).
+# Add an entry for every new language (natural native wording); falls back to English.
+CTA = {
+ "en": ("Before you go", "<em>Save</em> this checklist", ["Save it for your launch", "Follow for UK &amp; EU cosmetic rules", "Free check: WhatsApp +44 7868 737497"]),
+ "hr": ("Prije nego odete", "<em>Spremite</em> ovaj popis", ["Spremite ga za lansiranje", "Pratite nas za pravila EU i UK", "Besplatna provjera: WhatsApp +44 7868 737497"]),
+}
+
+def with_end(lang, scenes, tl, start=None):
+    """Append the end-card scene (visual only, music continues). Returns scenes, tl, total."""
+    k, t, lines = LANGS[lang].get("cta") or CTA.get(lang) or CTA["en"]
+    st = start if start is not None else tl[-1]["start"] + tl[-1]["dur"]
+    tl = tl[:-1] + [dict(tl[-1], dur=st - tl[-1]["start"])] + [{"start": st, "dur": END, "seg": [0.25, 0.75, 1.25]}]
+    scenes = list(scenes) + [(k, t, False, [(None, b) for b in lines])]
+    return scenes, tl, st + END
+
 def synth(scenes, tts):
     tl, parts, t = [], [np.zeros(int(LEAD * SR), np.float32)], LEAD
     for kicker, title, big, segs in scenes:
@@ -108,11 +124,12 @@ def page(lang, scenes, tl):
             f'<div class="itext" style="font-size:42px">{b}</div></div>'
             for n, (j, b) in enumerate([(j, b) for j, (_, b) in enumerate(segs) if b], 1))
         logo = (f'<div class="ttl" style="width:420px;height:420px;background:#fff;border-radius:44px;display:flex;align-items:center;justify-content:center;'
-                f'box-shadow:0 30px 80px rgba(0,0,0,.28);margin-bottom:70px"><img src="{LOGO}" style="width:350px"></div>') if big else ""
+                f'box-shadow:0 30px 80px rgba(0,0,0,.28);margin-bottom:70px"><img src="{LOGO}" style="width:350px"></div>') if big and i > 0 else ""
+        hook = i == 0  # first scene = the hook: no big logo, title larger and lower so it fills the frame from frame 0
         html += (f'<div class="scene s{i}" style="position:absolute;inset:0;background:var(--bg);opacity:0">'
-                 f'<div style="position:absolute;left:90px;right:90px;top:{330 if big else 380}px">{logo}'
+                 f'<div style="position:absolute;left:90px;right:90px;top:{560 if hook else 330 if big else 380}px">{logo}'
                  f'<div class="kicker" style="font-size:32px;margin-bottom:30px">{kicker}</div>'
-                 f'<h1 class="ttl" style="font-size:{100 if big else 92}px">{title}</h1>'
+                 f'<h1 class="ttl" style="font-size:{124 if hook else 100 if big else 92}px">{title}</h1>'
                  f'<div class="items" style="gap:20px;margin-top:56px">{cards}</div></div></div>')
     return f"""<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>{CSS}{css}
 .scene .kicker{{color:var(--mint)}} .scene h1{{color:var(--ink)}} .scene h1 em{{color:var(--mint)}}
@@ -129,7 +146,7 @@ def page(lang, scenes, tl):
 def build(lang):
     spec = LANGS[lang]; scenes = spec["scenes"]
     voice, tl = synth(scenes, spec["tts"])
-    total = len(voice) / SR + 0.6
+    scenes, tl, total = with_end(lang, scenes, tl)
     bed = music.make(total, seed=hash(lang) % 1000).astype(np.float32)[:, 0] / 32767 * 0.20
     v = np.zeros_like(bed); v[:len(voice)] = voice
     mix = np.clip(v + bed, -0.98, 0.98)

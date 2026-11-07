@@ -11,7 +11,7 @@ from lang_content import LANGS
 from playwright.sync_api import sync_playwright
 import music
 
-PAD = 0.6
+PAD = 0.2  # voice starts almost immediately
 # absolute speech times in the mp3 (s): scene starts and each segment start
 SCENES = [(0.0, [0.0]),
           (7.3, [7.63, 10.14, 12.42, 16.09, 18.59]),
@@ -29,7 +29,7 @@ for i, (st, segs) in enumerate(SCENES):
     s = 0.0 if i == 0 else st + PAD
     e = (SCENES[i + 1][0] + PAD) if i + 1 < len(SCENES) else total
     tl.append({"start": s, "dur": e - s, "seg": [max(0.0, t + PAD - s) for t in segs]})
-scenes = LANGS["hr"]["scenes"]
+scenes, tl, total = L.with_end("hr", LANGS["hr"]["scenes"], tl, start=len(voice) / L.SR + 0.3)
 bed = music.make(total, seed=hash("hr") % 1000).astype(np.float32)[:, 0] / 32767 * 0.20
 vv = np.zeros_like(bed); vv[:len(voice)] = voice[:len(bed)]
 mix = np.clip(vv + bed, -0.98, 0.98)
