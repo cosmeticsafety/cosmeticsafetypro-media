@@ -89,3 +89,13 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 - Captions: "📌 Save this for your launch · Follow for UK & EU cosmetic rules" line before WhatsApp. firstCommentText = one easy question (reel, Short, image post; never Pinterest). YouTube titles "<topic> | Subscribe for Weekly UK & EU Rules #Shorts" when under 100 chars; description has "🔔 Subscribe for weekly UK & EU cosmetic rules."
 - Rebuilt and re-uploaded 7 Nov: 9 Nov hr reel (46.2 s) + Short; 15 Nov rp-r, 16 Nov pif-r, 17 Nov how-long-r reels + Shorts (captions, first comments, YouTube titles updated). Commit 1ad6f3b. Pinterest pins for 9 and 15–17 Nov still to be added by the daily task.
 - Owner's part: pin the first-comment question on IG/TikTok/YouTube if possible and reply to comments; engage with 5–10 brand accounts a day.
+
+## Planned image posts 9–14 Nov 2026 (owner approved 8 Nov; 18:00 IG+FB+LI + Pinterest 18:05)
+Daily task: use these topics (re-verify every fact first; do not repeat). Reels 9–14 Nov stay the language series (hr, sl, lt, lv, et, no).
+- 9 Nov: Retinol in the EU — Reg (EU) 2024/996 limits, new products from 1 Nov 2025, off shelves 1 May 2027 (update; Pinterest board: Regulatory Updates)
+- 10 Nov: IFRA 52nd Amendment — what perfumers should prepare before Jan 2027 (update; board: Perfume & Fragrance Compliance). Re-check ifrafragrance.org for Notification date.
+- 11 Nov: UK ban on TPO gel nail products and 4-MBC — deadlines (update; board: Regulatory Updates)
+- 12 Nov: Stability and challenge testing — what your CPSR needs before launch (board: CPSR & Safety Assessment)
+- 13 Nov: EU microplastics restriction timeline, Reg (EU) 2023/2055 (update; board: Regulatory Updates)
+- 14 Nov: 6 label items besides INCI — batch number, function, PAO, warnings etc. (board: Cosmetic Labelling Tips)
+Dropped: "Importing cosmetics = Responsible Person" post (covered by 15 Nov RP reel).
