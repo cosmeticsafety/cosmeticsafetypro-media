@@ -67,6 +67,7 @@ THEMES = {
  "2026-11-06": ("#FFF1E6", "#FFFFFF", "#2B1B14", "#C2410C"),  # peach + burnt orange (post: GMP / ISO 22716)
  "2026-11-07": ("#FAF3DC", "#FFFFFF", "#2A2410", "#047857"),  # pale gold + emerald (post: fragrance allergens 80+)
  "2026-11-08": ("#E6F1FB", "#FFFFFF", "#10253B", "#B91C1C"),  # sky + crimson (post: CPSR Part A/B)
+ "2026-11-09": ("#F7EFE8", "#FFFFFF", "#2A1418", "#9F1239"),  # linen + burgundy (post: EU retinol limits)
  "2026-11-10": ("#16213E", "#1F2D52", "#F2F4FA", "#A5B4FC"),  # indigo + periwinkle (update)
  "2026-11-13": ("#E8F5EF", "#FFFFFF", "#10291F", "#0F7A55"),  # mint + emerald (update)
 }

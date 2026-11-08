@@ -8,18 +8,12 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "posts")
 os.makedirs(OUT, exist_ok=True)
 
 POSTS = [
- ("2026-11-07-fragrance-allergens", "Perfume · Labelling · EU", "Fragrance <em>allergens</em>: 80+ now on the label",
-  ["Reg. (EU) 2023/1545 expands the allergen list to 80+",
-   "Declare by name in the ingredients (INCI) list",
-   "Above 0.001% leave-on / 0.01% rinse-off",
-   "New products placed on the EU market after 31 Jul 2026",
-   "Older stock may stay on sale until 31 Jul 2028"]),
- ("2026-11-08-cpsr-part-a-b", "CPSR · Safety assessment · UK · EU", "Inside a <em>CPSR</em>: Part A and Part B",
-  ["Part A = the safety information (the data)",
-   "Composition, stability, microbiological quality, impurities",
-   "Exposure + toxicological profile of each ingredient",
-   "Part B = the safety assessment (the conclusion)",
-   "Signed by a qualified assessor, with label warnings"]),
+ ("2026-11-09-eu-retinol-limits", "⚡ Regulatory update · EU · Retinol", "Retinol in the <em>EU</em>: the new limits",
+  ["Reg. (EU) 2024/996 caps retinol, retinyl acetate & palmitate",
+   "Max 0.3% retinol equivalent in face, hand & other products",
+   "Max 0.05% retinol equivalent in body lotion",
+   "Label: “Contains Vitamin A. Consider your daily intake before use.”",
+   "New products since 1 Nov 2025 · old stock off shelves by 1 May 2027"]),
 ]
 
 def page_html(body, w, h, name):
