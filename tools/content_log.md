@@ -85,6 +85,9 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 8 Nov el reel: charcoal green + peach (#1F2A1F / #FFC9A8), 41.6 s, Piper rapunzelina 0.9; IG+FB+LI+TikTok 15:00 + YT Short 15:00 + Pinterest 15:10. Daily task: 7 and 8 Nov fully done — next is 9 Nov (hr already scheduled; add post + hr Pinterest pin only).
 9 Nov post (18:00 IG+FB+LI) + Pinterest 18:05 (Regulatory Updates): EU retinol limits (Reg 2024/996: 0.3% RE face/hand/other, 0.05% RE body lotion, vitamin A warning, 1 Nov 2025 / 1 May 2027 — Obelis, Cosmetics Business) — linen + burgundy (#F7EFE8/#9F1239). hr reel + Short already scheduled; added hr Pinterest video pin 16:10 (Cosmetic Regulations UK & EU). Built 8 Nov ~21:40 PKT.
 8 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used. Next: 10 Nov (sl reel + IFRA 52 post).
+10 Nov post (18:00 IG+FB+LI) + Pinterest 18:05 (Perfume & Fragrance Compliance): IFRA 52nd Amendment — 48 new dermal sensitisation Standards, 15 revised, furocoumarins in NCS 1 ppm/5 ppm, Notification expected Jan 2027, 11/30 months (ifrafragrance.org EoC letter 31 Aug 2026) — indigo + periwinkle (#16213E/#A5B4FC).
+10 Nov sl reel: deep berry + mint (#4A0D35 / #86EFAC), 47.0 s incl. end card, Piper artur 0.9; CTA "sl" added; IG+FB+LI+TikTok 16:00 + YT Short 16:00 + Pinterest 16:10 (Cosmetic Regulations UK & EU). Built 9 Nov ~21:40 PKT.
+9 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used. Next: 11 Nov (lt reel 15:00 + UK TPO/4-MBC post).
 
 ## Engagement changes (owner approved 7 Nov 2026; from 9 Nov)
 - Reels: hook question on screen from frame 0, voice starts within ~0.25 s (lang_reels LEAD 0.25, hr_reel PAD 0.2, no big logo on scene 0); 3.4 s end card "Save this / Follow for UK & EU rules / Free check on WhatsApp" (reels.py built in; lang_reels.py via with_end() + CTA dict — add a CTA entry for every new language).
