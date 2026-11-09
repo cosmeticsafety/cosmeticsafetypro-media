@@ -8,12 +8,12 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "posts")
 os.makedirs(OUT, exist_ok=True)
 
 POSTS = [
- ("2026-11-09-eu-retinol-limits", "⚡ Regulatory update · EU · Retinol", "Retinol in the <em>EU</em>: the new limits",
-  ["Reg. (EU) 2024/996 caps retinol, retinyl acetate & palmitate",
-   "Max 0.3% retinol equivalent in face, hand & other products",
-   "Max 0.05% retinol equivalent in body lotion",
-   "Label: “Contains Vitamin A. Consider your daily intake before use.”",
-   "New products since 1 Nov 2025 · old stock off shelves by 1 May 2027"]),
+ ("2026-11-10-ifra-52-amendment", "⚡ Perfume update · IFRA 52nd Amendment", "IFRA 52: what perfumers must <em>prepare</em> for 2027",
+  ["48 new dermal sensitisation restriction Standards",
+   "15 existing restriction Standards revised (new RIFM assessments)",
+   "Furocoumarins in natural extracts: 1 ppm sun products · 5 ppm other leave-on",
+   "Notification expected January 2027 (IFRA)",
+   "Then 11 months for new creations · 30 months for existing ones"]),
 ]
 
 def page_html(body, w, h, name):

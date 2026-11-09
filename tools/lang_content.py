@@ -330,4 +330,23 @@ LANGS = {
      ("Αναλαμβάνουμε τα πάντα. Στείλτε μας τη σύνθεσή σας για δωρεάν έλεγχο στο WhatsApp,", WA),
      ("ή επισκεφθείτε την ιστοσελίδα μας.", SITE)]),
   ]},
+ "sl": {
+  "name": "Slovenian", "flag": "SI", "tts": ("piper", "sl_SI-artur-medium", 0.9),
+  "scenes": [
+   ("EU in Združeno kraljestvo", "Prodajate <em>kozmetiko</em> v Evropi?", True, [
+     ("Prodajate kozmetiko ali parfume v Evropi? Brez teh štirih stvari izdelka ne smete prodajati.", None)]),
+   ("Evropska unija", "Kaj potrebujete v <em>EU</em>", False, [
+     ("V EU vsak izdelek potrebuje:", None),
+     ("odgovorno osebo s sedežem v EU,", "Odgovorna oseba v EU"),
+     ("poročilo o varnosti, ki ga podpiše usposobljen ocenjevalec,", "Poročilo o varnosti (CPSR)"),
+     ("dokumentacijo z informacijami o izdelku,", "Dokumentacija izdelka (PIF)"),
+     ("in priglasitev na evropskem portalu pred prodajo.", "Priglasitev CPNP")]),
+   ("Združeno kraljestvo", "Prodajate v <em>Veliki Britaniji</em>?", False, [
+     ("Za Veliko Britanijo potrebujete še odgovorno osebo v Združenem kraljestvu", "Odgovorna oseba v UK"),
+     ("in britansko priglasitev.", "Priglasitev SCPN"),
+     ("Bodite pozorni tudi na alergene v dišavah, retinol in zaščitni faktor.", "Alergeni · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Brezplačen</em> pregled formulacije", True, [
+     ("Za vse poskrbimo mi. Pošljite nam svojo formulacijo v brezplačen pregled prek WhatsAppa", WA),
+     ("ali obiščite našo spletno stran.", SITE)]),
+  ]},
 }
