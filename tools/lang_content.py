@@ -349,4 +349,23 @@ LANGS = {
      ("Za vse poskrbimo mi. Pošljite nam svojo formulacijo v brezplačen pregled prek WhatsAppa", WA),
      ("ali obiščite našo spletno stran.", SITE)]),
   ]},
+ "lt": {
+  "name": "Lithuanian", "flag": "LT", "tts": ("piper", "lt_LT-ingute-medium", 0.9),
+  "scenes": [
+   ("ES ir Jungtinė Karalystė", "Parduodate <em>kosmetiką</em> Europoje?", True, [
+     ("Parduodate kosmetiką ar kvepalus Europoje? Be šių keturių dalykų savo produkto parduoti negalite.", None)]),
+   ("Europos Sąjunga", "Ko reikia <em>ES</em>", False, [
+     ("Europos Sąjungoje kiekvienam produktui reikia:", None),
+     ("atsakingojo asmens, įsisteigusio ES,", "Atsakingasis asmuo ES"),
+     ("saugos ataskaitos, kurią pasirašo kvalifikuotas vertintojas,", "Saugos ataskaita (CPSR)"),
+     ("produkto informacinės bylos,", "Produkto informacinė byla (PIF)"),
+     ("ir pranešimo Europos portale prieš pradedant prekybą.", "Pranešimas CPNP")]),
+   ("Jungtinė Karalystė", "Parduodate <em>Didžiojoje Britanijoje</em>?", False, [
+     ("Didžiajai Britanijai dar reikia atsakingojo asmens Jungtinėje Karalystėje", "Atsakingasis asmuo JK"),
+     ("ir britiško pranešimo.", "Pranešimas SCPN"),
+     ("Atkreipkite dėmesį ir į kvapiųjų medžiagų alergenus, retinolį ir apsaugos nuo saulės faktorių.", "Alergenai · retinolis · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Nemokama</em> formulės peržiūra", True, [
+     ("Viskuo pasirūpinsime mes. Atsiųskite savo formulę nemokamai peržiūrai per WhatsApp", WA),
+     ("arba apsilankykite mūsų svetainėje.", SITE)]),
+  ]},
 }
