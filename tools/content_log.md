@@ -90,7 +90,7 @@ Content is created ONE DAY AHEAD only, by a daily scheduled task at ~21:35 Asia/
 9 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used. Next: 11 Nov (lt reel 15:00 + UK TPO/4-MBC post).
 11 Nov post (18:00 IG+FB+LI) + Pinterest 18:05 (Regulatory Updates): UK bans TPO (gel nails) + 15 CMRs and 4-MBC — 4-MBC 15 Jul 2026 / 14 Jan 2027; CMRs incl. TPO 15 Aug 2026 / 14 Feb 2027; "releases formaldehyde" >0.001% 15 Jul 2026 / 14 Jan 2027 (CTPA 16 Jan 2026) — pale rose + forest green (#FDF0F0/#166534).
 11 Nov lt reel: espresso + sky cyan (#241A14 / #67E8F9), 48.5 s incl. end card, Piper ingute 0.9; CTA "lt" added; IG+FB+LI+TikTok 15:00 + YT Short 15:00 + Pinterest 15:10 (Cosmetic Regulations UK & EU). Built 10 Nov ~21:50 PKT.
-NOTE: lt_LT-ingute voice config says phoneme_type "lithuanian", which piper-tts 1.8.0 (latest on PyPI) does not support. Workaround: edit piper/lt_LT-ingute-medium.onnx.json to phoneme_type "espeak" (espeak voice lt; all phonemes are in the id map). Speech is intelligible (Whisper check) but may sound less natural. lv/et voices may need the same check.
+NOTE: lt_LT-ingute voice config says phoneme_type "lithuanian", which piper-tts 1.8.0 (latest on PyPI) does not support. Workaround: edit piper/lt_LT-ingute-medium.onnx.json to phoneme_type "espeak" (espeak voice lt; all phonemes are in the id map). Speech is intelligible (Whisper check) but may sound less natural. lv/et voices may need the same check. Owner (10 Nov): keep the Piper voice, no custom voiceover needed.
 10 Nov run: WebFetch of cosmeticsafetypro.com/blogs/ again not permitted; no blog used. Next: 12 Nov (lv reel 15:00 + stability/challenge testing post).
 
 ## Engagement changes (owner approved 7 Nov 2026; from 9 Nov)
