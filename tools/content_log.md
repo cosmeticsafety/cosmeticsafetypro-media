@@ -108,3 +108,9 @@ Daily task: use these topics (re-verify every fact first; do not repeat). Reels 
 - 13 Nov: EU microplastics restriction timeline, Reg (EU) 2023/2055 (update; board: Regulatory Updates)
 - 14 Nov: 6 label items besides INCI — batch number, function, PAO, warnings etc. (board: Cosmetic Labelling Tips)
 Dropped: "Importing cosmetics = Responsible Person" post (covered by 15 Nov RP reel).
+
+## Long videos (16:9, YouTube + LinkedIn + Facebook) — built 10/11 Nov 2026 on owner request, NOT yet scheduled
+- videos/perfume-brand-compliance-steps.mp4 (202.9 s, aubergine + champagne gold): perfume = cosmetic, IFRA certificate (Cat. 4), allergens 80+ (31 Jul 2026 / 2028), label, candles/diffusers = CLP, 3 mistakes.
+- videos/7-mistakes-amazon-etsy-cosmetics.mp4 (179.9 s, graphite + coral): no CPSR, no RP, not notified, INCI list, medicinal claims, banned ingredients, formula change.
+- Scripts in tools/video_content.py; build: `python3 tools/video.py <tts_dir> <out.mp4> <key>` (Kokoro bf_emma; tts_dir = kokoro-q8.onnx joined from npm kokoro-q8-shards + voices.bin npz built from npm kokoro-js voices/*.bin).
+- Owner wants extra EU-language AUDIO TRACKS for YouTube (one video, multi-language audio), not separate videos. Pending his OK on the English versions.

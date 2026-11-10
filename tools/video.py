@@ -6,7 +6,7 @@ Each scene = a title + bullet cards; every bullet has its own narration line, so
 cards appear exactly when the voice reaches them. Background music from music.py
 is mixed underneath.
 
-    python3 tools/video.py <tts_dir> <out.mp4>
+    python3 tools/video.py <tts_dir> <out.mp4> [key]   (key = entry in tools/video_content.py VIDEOS)
 """
 import sys, os, json, subprocess
 import numpy as np
@@ -20,6 +20,7 @@ LOGO = "data:image/png;base64," + base64.b64encode(open(os.path.join(os.path.dir
 
 W, H, FPS, SR = 1920, 1080, 30, 44100
 VOICE, LANG, SPEED = "bf_emma", "en-gb", 1.0
+SEED = 11
 GAP = 0.6          # silence between narration lines (s)
 TAIL = 1.0          # pause at end of each scene (s)
 
@@ -117,7 +118,7 @@ window.render=function(t){
   document.querySelectorAll('.scene').forEach((el,i)=>{
     const s=T[i], lt=t-s.start, end=s.dur;
     let o = i===cur ? Math.min(ease(lt/0.5), 1-ease((lt-(end-0.45))/0.45)) : 0;
-    if(i===0 && t<0.6) o=ease(t/0.6);
+    if(i===0 && lt<0.6) o=1;  // first frame shows content (thumbnail)
     el.style.opacity=Math.max(0,o); el.style.visibility=o>0?'visible':'hidden';
     if(i!==cur) return;
     const h=el.querySelector('.ttl'); const p=ease(lt/0.7); h.style.transform=`translateY(${(1-p)*50}px)`;
@@ -173,7 +174,7 @@ def build(tts_dir, out):
     voice, timeline = synth(tts_dir)
     total = len(voice) / SR + 0.4
     # music bed, ducked well under the voice
-    bed = music.make(total, seed=11).astype(np.float32) / 32767
+    bed = music.make(total, seed=SEED).astype(np.float32) / 32767
     bed = bed[:, 0] * 0.22
     v = np.zeros_like(bed); v[:len(voice)] = voice / (np.abs(voice).max() or 1) * 0.8
     mix = np.clip(v + bed, -0.98, 0.98)
@@ -197,4 +198,7 @@ def build(tts_dir, out):
     print("ok", out, round(total, 1), "s")
 
 if __name__ == "__main__":
+    if len(sys.argv) > 3:
+        from video_content import VIDEOS
+        SCENES, SEED = VIDEOS[sys.argv[3]]["scenes"], VIDEOS[sys.argv[3]]["seed"]
     build(sys.argv[1], sys.argv[2])
