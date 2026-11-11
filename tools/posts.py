@@ -8,12 +8,12 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "posts")
 os.makedirs(OUT, exist_ok=True)
 
 POSTS = [
- ("2026-11-11-uk-tpo-4mbc-ban", "⚡ Regulatory update · UK (GB)", "UK bans <em>TPO</em> and 4&#8209;MBC: your deadlines",
-  ["4-MBC (UV filter): no new stock on the GB market from 15 Jul 2026",
-   "4-MBC products off GB shelves by 14 Jan 2027",
-   "TPO (gel nails) + 15 other CMRs banned from 15 Aug 2026",
-   "TPO gel nail products off GB shelves by 14 Feb 2027",
-   "\u201cReleases formaldehyde\u201d warning above 0.001% (15 Jul 2026 / 14 Jan 2027)"]),
+ ("2026-11-12-stability-challenge-testing", "CPSR · Annex I Part A", "Launching soon? Your CPSR needs <em>stability</em> &amp; challenge data",
+  ["Stability tests that fit your product type and its intended use",
+   "Proof the jar, pump or bottle causes no stability problems",
+   "Shelf life (minimum durability) and PAO justified by data",
+   "Preservation challenge test + micro tests for most products",
+   "Perfume with high alcohol? Tests may be skipped, but a scientific justification is still needed"]),
 ]
 
 def page_html(body, w, h, name):

@@ -368,4 +368,23 @@ LANGS = {
      ("Viskuo pasirūpinsime mes. Atsiųskite savo formulę nemokamai peržiūrai per WhatsApp", WA),
      ("arba apsilankykite mūsų svetainėje.", SITE)]),
   ]},
+ "lv": {
+  "name": "Latvian", "flag": "LV", "tts": ("piper", "lv_LV-aivars-medium", 0.8),
+  "scenes": [
+   ("ES un Lielbritānija", "Pārdodat <em>kosmētiku</em> Eiropā?", True, [
+     ("Pārdodat kosmētiku vai smaržas Eiropā? Bez šīm četrām lietām savu produktu pārdot nedrīkstat.", None)]),
+   ("Eiropas Savienība", "Kas nepieciešams <em>ES</em>", False, [
+     ("Eiropas Savienībā katram produktam ir nepieciešama:", None),
+     ("atbildīgā persona, kas reģistrēta ES,", "Atbildīgā persona ES"),
+     ("drošuma ziņojums, ko parakstījis kvalificēts vērtētājs,", "Drošuma ziņojums (CPSR)"),
+     ("produkta informācijas dokumentācija,", "Produkta dokumentācija (PIF)"),
+     ("un paziņojums Eiropas portālā pirms pārdošanas.", "CPNP paziņojums")]),
+   ("Apvienotā Karaliste", "Pārdodat <em>Lielbritānijā</em>?", False, [
+     ("Lielbritānijai papildus nepieciešama atbildīgā persona Apvienotajā Karalistē", "Atbildīgā persona AK"),
+     ("un britu paziņojums.", "SCPN paziņojums"),
+     ("Pievērsiet uzmanību arī smaržvielu alergēniem, retinolam un saules aizsardzības faktoram.", "Alergēni · retinols · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Bezmaksas</em> receptūras pārbaude", True, [
+     ("Mēs parūpēsimies par visu. Atsūtiet savu receptūru bezmaksas pārbaudei WhatsApp", WA),
+     ("vai apmeklējiet mūsu tīmekļa vietni.", SITE)]),
+  ]},
 }

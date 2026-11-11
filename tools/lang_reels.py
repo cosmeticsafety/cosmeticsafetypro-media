@@ -44,6 +44,7 @@ PALETTES = {
  "el": (_v("#1F2A1F", "#2D3B2D", "#F6FAF3", "#FFC9A8"), _v("#FFF6EF", "#FFFFFF", "#1F2A1F", "#B4532A")),  # charcoal green + peach
  "sl": (_v("#4A0D35", "#5E1745", "#FDF2F8", "#86EFAC"), _v("#F0FDF4", "#FFFFFF", "#4A0D35", "#9D174D")),  # deep berry + mint
  "lt": (_v("#241A14", "#33261D", "#F5FBFC", "#67E8F9"), _v("#ECFEFF", "#FFFFFF", "#241A14", "#0E7490")),  # espresso + sky cyan
+ "lv": (_v("#1A2E05", "#263F0B", "#F7FEE7", "#F0ABFC"), _v("#FDF4FF", "#FFFFFF", "#1A2E05", "#A21CAF")),  # deep moss + orchid
  "cs": (_v("#12203F", "#1C2E57", "#F5F7FB", "#FF5C5C"), _v("#F6F7FB", "#FFFFFF", "#12203F", "#D7141A")),  # ink navy + Czech red
 }
 
@@ -76,6 +77,7 @@ def say(text, tts):
 CTA = {
  "en": ("Before you go", "<em>Save</em> this checklist", ["Save it for your launch", "Follow for UK &amp; EU cosmetic rules", "Free check: WhatsApp +44 7868 737497"]),
  "sl": ("Preden greste", "<em>Shranite</em> ta seznam", ["Shranite ga za lansiranje", "Sledite nam za pravila EU in UK", "Brezplačen pregled: WhatsApp +44 7868 737497"]),
+ "lv": ("Pirms dodaties tālāk", "<em>Saglabājiet</em> šo sarakstu", ["Saglabājiet to produkta laišanai tirgū", "Sekojiet mums par ES un AK noteikumiem", "Bezmaksas pārbaude: WhatsApp +44 7868 737497"]),
  "lt": ("Prieš išeidami", "<em>Išsaugokite</em> šį sąrašą", ["Išsaugokite produkto pristatymui", "Sekite mus dėl ES ir JK taisyklių", "Nemokama patikra: WhatsApp +44 7868 737497"]),
  "hr": ("Prije nego odete", "<em>Spremite</em> ovaj popis", ["Spremite ga za lansiranje", "Pratite nas za pravila EU i UK", "Besplatna provjera: WhatsApp +44 7868 737497"]),
 }
