@@ -129,3 +129,6 @@ Topics (verify at build): 18 de PERFUME SAFETY ASSESSMENT (owner request 12 Nov)
 Build: new 4-scene script per language in tools/lang_content.py (same structure as the checklist reels, native wording, 38–49 s incl. 3.4 s end card), unique palette (reuse the language's existing PALETTES entry or add one), make sure CTA[<code>] exists, hook question from frame 0, Piper voice via tools/get_piper_voice.sh. Output filename must differ from the checklist reel (do not overwrite reels/lang/<code>-cosmetics-checklist.mp4).
 
 NOTE 12 Nov: perfume blog topics (Perfume CPSR guide, Essential steps in perfume safety assessments) are now covered by the 18 Nov German reel, so no image post may use them (reel/post topics must never match).
+
+## RULE (owner, 12 Nov 2026): ONE reel + ONE image post per day
+On days with an EU-language reel (18 de, 21 fr, 24 es, 27 it, 30 pl) DO NOT make the English reel — the language reel is that day's only reel. The English reels planned for those days are dropped: 18 cosmetic or medicine? · 21 shades/variants · 24 label language rules · 27 ⚡ update slot · 30 ⚡ update slot. Keep them as a reserve pool for December (the first two are already verified; re-verify before use). English reels still run 19, 20, 22, 23, 25, 26, 28, 29 Nov (with the update-slot rule above), plus the already-scheduled 15–17 Nov.
