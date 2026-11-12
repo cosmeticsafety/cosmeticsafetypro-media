@@ -85,6 +85,15 @@ REEL_THEMES = {
  "2026-10-27": ("#141414", "#222222", "#F7F3E8", "#FFD23F"),  # ink + yellow (update reel, paused)
  "2026-10-30": ("#0B1F3A", "#132C50", "#F3F6FB", "#6FB1FF"),  # midnight + sky (update reel, paused)
  "2026-11-03": ("#2A1A12", "#3A251A", "#F6EDE3", "#E3A86B"),  # espresso + amber (IFRA 52 update reel, paused; moved from THEMES 2 Nov)
+ # English reels 19-29 Nov 2026 (dark backgrounds; posts use light ones)
+ "2026-11-19": ("#2C1E4A", "#3B2A5E", "#F6F2FF", "#7EE8FA"),  # grape + ice cyan (supplier documents)
+ "2026-11-20": ("#101828", "#1B2740", "#F3F6FB", "#FF7A45"),  # slate navy + hot orange (fake cosmetics update)
+ "2026-11-22": ("#0F3D2E", "#175240", "#F1FBF6", "#FF9FCE"),  # deep green + pink (contract manufacturer)
+ "2026-11-23": ("#2E1A2B", "#432640", "#FBF1F9", "#A7F3D0"),  # plum-brown + mint (EU green claims update)
+ "2026-11-25": ("#33280A", "#473813", "#FFF9E6", "#93C5FD"),  # dark ochre + baby blue (children under 3)
+ "2026-11-26": ("#1E1B4B", "#2B2766", "#F2F1FF", "#FCA5A5"),  # navy-violet + salmon (CPSR red flags)
+ "2026-11-28": ("#0C1B2A", "#14293F", "#F1F6FB", "#FDBA74"),  # deep marine + apricot (exposure)
+ "2026-11-29": ("#1E293B", "#2A3A52", "#F4F7FB", "#FCD34D"),  # blue-grey + yellow (samples/testers)
 }
 
 def theme_css(name, reel=False):
