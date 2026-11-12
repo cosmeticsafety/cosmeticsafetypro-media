@@ -9,7 +9,8 @@ from scipy.signal import resample_poly
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, os.path.dirname(__file__))
 from theme import CSS, MOTIF
-from lang_content import LANGS
+from lang_content import LANGS, TOPICS
+LANGS = {**LANGS, **TOPICS}  # topic reels are keyed '<code>-<slug>'
 import music
 
 W, H, FPS, SR = 1080, 1920, 30, 44100
@@ -45,6 +46,13 @@ PALETTES = {
  "sl": (_v("#4A0D35", "#5E1745", "#FDF2F8", "#86EFAC"), _v("#F0FDF4", "#FFFFFF", "#4A0D35", "#9D174D")),  # deep berry + mint
  "lt": (_v("#241A14", "#33261D", "#F5FBFC", "#67E8F9"), _v("#ECFEFF", "#FFFFFF", "#241A14", "#0E7490")),  # espresso + sky cyan
  "lv": (_v("#1A2E05", "#263F0B", "#F7FEE7", "#F0ABFC"), _v("#FDF4FF", "#FFFFFF", "#1A2E05", "#A21CAF")),  # deep moss + orchid
+ "et": (_v("#3B2A0A", "#4D3913", "#FFF8EB", "#93C5FD"), _v("#EFF6FF", "#FFFFFF", "#3B2A0A", "#1D4ED8")),  # amber brown + periwinkle
+ "no": (_v("#3D0F1F", "#541A2E", "#FFF1F4", "#A7F3D0"), _v("#F0FDF8", "#FFFFFF", "#3D0F1F", "#047857")),  # fjord crimson + mint
+ "de-perfume": (_v("#2B0F2E", "#3C1A40", "#FBF3FF", "#E8C27A"), _v("#FBF4E6", "#FFFFFF", "#2B0F2E", "#92400E")),  # velvet plum + champagne gold
+ "fr-preservatives": (_v("#0F3D4C", "#17536A", "#F0FAFD", "#FDBA74"), _v("#FFF6EC", "#FFFFFF", "#0F3D4C", "#C2410C")),  # deep lagoon + orange
+ "es-uv": (_v("#1F2937", "#2B3849", "#F5F7FA", "#FB923C"), _v("#FFF4EA", "#FFFFFF", "#1F2937", "#C2410C")),  # slate + sun orange
+ "it-cmr": (_v("#1C1033", "#2B1A4B", "#F6F1FF", "#F9A8D4"), _v("#FDF2F8", "#FFFFFF", "#1C1033", "#BE185D")),  # night violet + pink
+ "pl-poison": (_v("#0B2A2B", "#133C3E", "#F0FAF9", "#F87171"), _v("#FEF2F2", "#FFFFFF", "#0B2A2B", "#B91C1C")),  # dark spruce + coral red
  "cs": (_v("#12203F", "#1C2E57", "#F5F7FB", "#FF5C5C"), _v("#F6F7FB", "#FFFFFF", "#12203F", "#D7141A")),  # ink navy + Czech red
 }
 
@@ -79,12 +87,19 @@ CTA = {
  "sl": ("Preden greste", "<em>Shranite</em> ta seznam", ["Shranite ga za lansiranje", "Sledite nam za pravila EU in UK", "Brezplačen pregled: WhatsApp +44 7868 737497"]),
  "lv": ("Pirms dodaties tālāk", "<em>Saglabājiet</em> šo sarakstu", ["Saglabājiet to produkta laišanai tirgū", "Sekojiet mums par ES un AK noteikumiem", "Bezmaksas pārbaude: WhatsApp +44 7868 737497"]),
  "lt": ("Prieš išeidami", "<em>Išsaugokite</em> šį sąrašą", ["Išsaugokite produkto pristatymui", "Sekite mus dėl ES ir JK taisyklių", "Nemokama patikra: WhatsApp +44 7868 737497"]),
+ "de": ("Bevor Sie gehen", "<em>Speichern</em> Sie diese Checkliste", ["Für Ihren Launch speichern", "Folgen für EU- &amp; UK-Kosmetikregeln", "Kostenloser Check: WhatsApp +44 7868 737497"]),
+ "fr": ("Avant de partir", "<em>Enregistrez</em> cette liste", ["Enregistrez-la pour votre lancement", "Suivez-nous pour les règles UE &amp; UK", "Vérification gratuite : WhatsApp +44 7868 737497"]),
+ "es": ("Antes de irse", "<em>Guarde</em> esta lista", ["Guárdela para su lanzamiento", "Síganos para las normas UE y UK", "Revisión gratuita: WhatsApp +44 7868 737497"]),
+ "it": ("Prima di andare", "<em>Salva</em> questa lista", ["Salvala per il tuo lancio", "Seguici per le regole UE e UK", "Controllo gratuito: WhatsApp +44 7868 737497"]),
+ "pl": ("Zanim pójdziesz", "<em>Zapisz</em> tę listę", ["Zapisz ją na czas premiery", "Obserwuj nas: zasady UE i UK", "Bezpłatna weryfikacja: WhatsApp +44 7868 737497"]),
+ "et": ("Enne lahkumist", "<em>Salvestage</em> see nimekiri", ["Salvestage see turuletuleku jaoks", "Jälgige meid ELi ja UK reeglite jaoks", "Tasuta kontroll: WhatsApp +44 7868 737497"]),
+ "no": ("Før du går", "<em>Lagre</em> denne listen", ["Lagre den til lanseringen", "Følg oss for EU- og UK-regler", "Gratis sjekk: WhatsApp +44 7868 737497"]),
  "hr": ("Prije nego odete", "<em>Spremite</em> ovaj popis", ["Spremite ga za lansiranje", "Pratite nas za pravila EU i UK", "Besplatna provjera: WhatsApp +44 7868 737497"]),
 }
 
 def with_end(lang, scenes, tl, start=None):
     """Append the end-card scene (visual only, music continues). Returns scenes, tl, total."""
-    k, t, lines = LANGS[lang].get("cta") or CTA.get(lang) or CTA["en"]
+    k, t, lines = LANGS[lang].get("cta") or CTA.get(LANGS[lang].get("base", lang)) or CTA["en"]
     st = start if start is not None else tl[-1]["start"] + tl[-1]["dur"]
     tl = tl[:-1] + [dict(tl[-1], dur=st - tl[-1]["start"])] + [{"start": st, "dur": END, "seg": [0.25, 0.75, 1.25]}]
     scenes = list(scenes) + [(k, t, False, [(None, b) for b in lines])]
@@ -157,7 +172,7 @@ def build(lang):
     v = np.zeros_like(bed); v[:len(voice)] = voice
     mix = np.clip(v + bed, -0.98, 0.98)
     out_dir = os.path.join(ROOT, "reels", "lang"); os.makedirs(out_dir, exist_ok=True)
-    out = os.path.join(out_dir, f"{lang}-cosmetics-checklist.mp4"); wav = out + ".wav"
+    out = os.path.join(out_dir, spec.get("out", f"{lang}-cosmetics-checklist") + ".mp4"); wav = out + ".wav"
     sf.write(wav, np.stack([mix, mix], 1), SR)
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": W, "height": H})

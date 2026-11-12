@@ -387,4 +387,142 @@ LANGS = {
      ("Mēs parūpēsimies par visu. Atsūtiet savu receptūru bezmaksas pārbaudei WhatsApp", WA),
      ("vai apmeklējiet mūsu tīmekļa vietni.", SITE)]),
   ]},
+
+ "et": {
+  "name": "Estonian", "flag": "EE", "tts": ("piper", "et_EE-news-medium", 0.9),
+  "scenes": [
+   ("EL ja Ühendkuningriik", "Müüte <em>kosmeetikat</em> Euroopas?", True, [
+     ("Müüte kosmeetikat või parfüümi Euroopas? Ilma nende nelja asjata ei tohi te oma toodet müüa.", None)]),
+   ("Euroopa Liit", "Mida vajate <em>ELis</em>", False, [
+     ("Euroopa Liidus vajab iga toode:", None),
+     ("ELis asuvat vastutavat isikut,", "Vastutav isik ELis"),
+     ("ohutusaruannet, mille allkirjastab kvalifitseeritud hindaja,", "Ohutusaruanne (CPSR)"),
+     ("tooteteabe toimikut,", "Tooteteabe toimik (PIF)"),
+     ("ja teavitust Euroopa portaalis enne müüki.", "CPNP teavitus")]),
+   ("Ühendkuningriik", "Müüte <em>Suurbritannias</em>?", False, [
+     ("Suurbritannia jaoks on lisaks vaja Ühendkuningriigis asuvat vastutavat isikut", "Vastutav isik UKs"),
+     ("ja Briti teavitust.", "SCPN teavitus"),
+     ("Pöörake tähelepanu ka lõhnaallergeenidele, retinoolile ja päikesekaitsefaktorile.", "Allergeenid · retinool · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Tasuta</em> valemi ülevaatus", True, [
+     ("Me hoolitseme kõige eest. Saatke oma valem tasuta ülevaatuseks WhatsAppi kaudu", WA),
+     ("või külastage meie veebilehte.", SITE)]),
+  ]},
+ "no": {
+  "name": "Norwegian", "flag": "NO", "tts": ("piper", "no_NO-talesyntese-medium", 0.9),
+  "scenes": [
+   ("EU og Storbritannia", "Selger du <em>kosmetikk</em> i Europa?", True, [
+     ("Selger du kosmetikk eller parfyme i Europa? Uten disse fire tingene kan du ikke selge produktet ditt.", None)]),
+   ("Den europeiske union", "Dette trenger du i <em>EU</em>", False, [
+     ("I EU trenger hvert produkt:", None),
+     ("en ansvarlig person etablert i EU,", "Ansvarlig person i EU"),
+     ("en sikkerhetsrapport signert av en kvalifisert vurderer,", "Sikkerhetsrapport (CPSR)"),
+     ("en produktinformasjonsfil,", "Produktfil (PIF)"),
+     ("og en varsling i det europeiske portalen før salg.", "CPNP-varsling")]),
+   ("Storbritannia", "Selger du i <em>Storbritannia</em>?", False, [
+     ("For Storbritannia trenger du i tillegg en ansvarlig person i Storbritannia", "Ansvarlig person i UK"),
+     ("og en britisk varsling.", "SCPN-varsling"),
+     ("Vær også oppmerksom på parfymeallergener, retinol og solfaktor.", "Allergener · retinol · SPF")]),
+   ("Cosmetic Safety Pro", "<em>Gratis</em> gjennomgang av formelen din", True, [
+     ("Vi tar oss av alt. Send oss formelen din til gratis gjennomgang på WhatsApp", WA),
+     ("eller besøk nettsiden vår.", SITE)]),
+  ]},
+}
+
+# Topic reels (own script, not the checklist). Key = "<code>-<slug>"; "base" = language code (CTA/flag).
+TOPICS = {
+ "de-perfume": {
+  "base": "de", "out": "de-perfume-safety-assessment",
+  "name": "German", "flag": "DE", "tts": ("piper", "de_DE-thorsten-medium", 0.9),
+  "scenes": [
+   ("Parfüm &amp; EU-Recht", "Verkaufen Sie <em>Parfüm</em> in der EU?", True, [
+     ("Verkaufen Sie Parfüm in der EU? Dann brauchen Sie eine Sicherheitsbewertung, bevor die erste Flasche verkauft wird.", None)]),
+   ("Kosmetikverordnung", "Parfüm ist <em>Kosmetik</em>", False, [
+     ("Parfüm gilt rechtlich als Kosmetikum. Deshalb braucht jedes Produkt:", None),
+     ("einen Sicherheitsbericht mit Teil A, den Sicherheitsinformationen,", "Sicherheitsbericht Teil A"),
+     ("und Teil B, die Bewertung durch einen qualifizierten Sicherheitsbewerter,", "Teil B: Bewertung"),
+     ("sowie eine Meldung im europäischen Portal CPNP.", "CPNP-Meldung")]),
+   ("Duftstoffe", "Was bei <em>Parfüm</em> dazukommt", False, [
+     ("Bei Parfüm kommen noch zwei Dinge dazu.", None),
+     ("Das IFRA-Zertifikat Ihres Duftstofflieferanten ersetzt die Sicherheitsbewertung nicht.", "IFRA-Zertifikat ≠ Bewertung"),
+     ("Und über achtzig Duftallergene müssen ab bestimmten Mengen auf dem Etikett stehen.", "80+ Allergene aufs Etikett")]),
+   ("Cosmetic Safety Pro", "<em>Kostenlose</em> Prüfung Ihrer Formel", True, [
+     ("Wir kümmern uns um alles. Schicken Sie uns Ihre Duftformel zur kostenlosen Prüfung per WhatsApp", WA),
+     ("oder besuchen Sie unsere Website.", SITE)]),
+  ]},
+ "fr-preservatives": {
+  "base": "fr", "out": "fr-preservatives-annex-v",
+  "name": "French", "flag": "FR", "tts": ("piper", "fr_FR-siwis-medium", 0.9),
+  "scenes": [
+   ("Conformité UE", "Votre <em>conservateur</em> est-il autorisé&nbsp;?", True, [
+     ("Vous vendez des cosmétiques en Europe ? Votre conservateur est-il vraiment autorisé ?", None)]),
+   ("Annexe V", "La liste des <em>conservateurs</em>", False, [
+     ("Dans l'Union européenne, un cosmétique ne peut contenir que les conservateurs de l'annexe V du règlement cosmétique.", None),
+     ("Seuls les conservateurs de la liste sont permis,", "Liste de l'annexe V"),
+     ("dans les limites et conditions fixées,", "Limites et conditions"),
+     ("et tous figurent dans la liste des ingrédients.", "Liste des ingrédients")]),
+   ("Pour votre dossier", "Que faire <em>concrètement</em>&nbsp;?", False, [
+     ("Vérifiez chaque conservateur dans l'annexe V,", "Vérifier l'annexe V"),
+     ("prouvez son efficacité avec un test de conservation,", "Test de conservation"),
+     ("et intégrez le tout dans votre rapport de sécurité.", "Rapport de sécurité (CPSR)")]),
+   ("Cosmetic Safety Pro", "Analyse <em>gratuite</em> de votre formule", True, [
+     ("Nous nous occupons de tout. Envoyez-nous votre formule pour une analyse gratuite sur WhatsApp,", WA),
+     ("ou rendez-vous sur notre site.", SITE)]),
+  ]},
+ "es-uv": {
+  "base": "es", "out": "es-uv-filters-annex-vi",
+  "name": "Spanish", "flag": "ES", "tts": ("piper", "es_ES-davefx-medium", 0.9),
+  "scenes": [
+   ("Normativa UE", "¿Sus <em>filtros UV</em> son legales?", True, [
+     ("¿Su producto lleva filtros UV? En Europa solo se permiten los de una lista oficial.", None)]),
+   ("Anexo VI", "La lista de <em>filtros UV</em>", False, [
+     ("En la Unión Europea, un cosmético solo puede llevar los filtros UV del anexo VI del Reglamento de cosméticos.", None),
+     ("Solo los filtros de la lista oficial,", "Lista del anexo VI"),
+     ("dentro de los límites y condiciones fijados,", "Límites y condiciones"),
+     ("y cualquier otro filtro está prohibido.", "Los demás, prohibidos")]),
+   ("Antes de lanzar", "Qué debe <em>revisar</em>", False, [
+     ("Compruebe cada filtro en el anexo VI,", "Revisar el anexo VI"),
+     ("respete la concentración máxima permitida,", "Concentración máxima"),
+     ("y refléjelo en su informe de seguridad.", "Informe de seguridad (CPSR)")]),
+   ("Cosmetic Safety Pro", "Revisión <em>gratuita</em> de su fórmula", True, [
+     ("Nosotros nos encargamos de todo. Envíenos su fórmula para una revisión gratuita por WhatsApp", WA),
+     ("o visite nuestra web.", SITE)]),
+  ]},
+ "it-cmr": {
+  "base": "it", "out": "it-cmr-substances-art15",
+  "name": "Italian", "flag": "IT", "tts": ("piper", "it_IT-paola-medium", 0.9),
+  "scenes": [
+   ("Conformità UE", "Sostanze <em>CMR</em> nei cosmetici?", True, [
+     ("Vendi cosmetici in Europa? Alcune sostanze sono vietate perché cancerogene o tossiche per la riproduzione.", None)]),
+   ("Articolo 15", "Le sostanze <em>CMR</em>", False, [
+     ("Il regolamento cosmetico vieta le sostanze CMR: cancerogene, mutagene o tossiche per la riproduzione.", None),
+     ("Categoria 2: vietata, salvo parere positivo del comitato scientifico SCCS,", "Categoria 2: vietata"),
+     ("categorie 1A e 1B: vietate, con eccezioni molto rigorose,", "1A e 1B: eccezioni limitate"),
+     ("per esempio quando non esistono alternative adatte.", "Nessuna alternativa")]),
+   ("Cosa fare", "Cosa <em>controllare</em>", False, [
+     ("Verifica la classificazione CMR di ogni ingrediente.", "Classificazione CMR"),
+     ("Le classificazioni cambiano nel tempo,", "Classificazioni in evoluzione"),
+     ("quindi rivedi regolarmente le tue formule.", "Rivedi le formule")]),
+   ("Cosmetic Safety Pro", "Analisi <em>gratuita</em> della tua formula", True, [
+     ("Ci occupiamo noi di tutto. Inviaci la tua formula per un controllo gratuito su WhatsApp", WA),
+     ("oppure visita il nostro sito.", SITE)]),
+  ]},
+ "pl-poison": {
+  "base": "pl", "out": "pl-frame-formulation-poison-centres",
+  "name": "Polish", "flag": "PL", "tts": ("piper", "pl_PL-gosia-medium", 0.9),
+  "scenes": [
+   ("Zgodność UE", "Co jeśli ktoś połknie Twój <em>kosmetyk</em>?", True, [
+     ("Co się stanie, jeśli ktoś połknie Twój kosmetyk? Lekarze muszą wiedzieć, co jest w środku.", None)]),
+   ("Zgłoszenie CPNP", "Formuła <em>ramowa</em> w CPNP", False, [
+     ("Przed wprowadzeniem produktu na rynek UE przekazujesz w portalu CPNP formułę ramową.", None),
+     ("Podaje ona kategorie składników i ich maksymalne stężenia,", "Kategorie i maksymalne stężenia"),
+     ("ma umożliwić szybkie leczenie w razie zatrucia,", "Szybka pomoc medyczna"),
+     ("a korzystają z niej ośrodki toksykologiczne.", "Ośrodki toksykologiczne")]),
+   ("Twoja rola", "Co <em>musisz</em> zrobić", False, [
+     ("Przygotuj formułę ramową dla każdego produktu,", "Formuła ramowa"),
+     ("zgłoś produkt w CPNP przed sprzedażą,", "Zgłoszenie CPNP"),
+     ("i miej pełny skład w dokumentacji PIF.", "Skład w dokumentacji PIF")]),
+   ("Cosmetic Safety Pro", "<em>Bezpłatna</em> analiza Twojej formuły", True, [
+     ("Zajmiemy się wszystkim. Wyślij nam swoją formułę do bezpłatnej analizy przez WhatsApp", WA),
+     ("albo odwiedź naszą stronę.", SITE)]),
+  ]},
 }
