@@ -143,3 +143,4 @@ Do NOT reuse for new posts/reels: counterfeit cosmetics, green claims, TPP ban, 
 19 Nov run: 20 Nov fully pre-scheduled (free-from/hypoallergenic claims post 18:00 + pin 18:05; UK IPO "Face the Fakes" counterfeit reel 20:00 IG+FB+LI+TikTok + Short 20:00 + pin 20:10) — nothing new built.
 20 Nov run: 21 Nov fully pre-scheduled (who can sign a safety assessment post 18:00 + pin 18:05; fr preservatives Annex V reel 16:00 IG+FB+LI+TikTok + Short 16:00 + pin 16:10) — nothing new built; no English reel on 21 Nov per one-reel rule.
 21 Nov run: 22 Nov fully pre-scheduled (selling online across borders post 18:00 + pin 18:05; contract manufacturer reel 20:00 IG+FB+LI+TikTok + Short 20:00 + pin 20:10) — nothing new built.
+22 Nov run: 23 Nov fully pre-scheduled ("natural ≠ safe" post 18:00 + pin 18:05; EU green claims Directive 2024/825 reel 20:00 IG+FB+LI+TikTok + Short 20:00 + pin 20:10) — nothing new built.
