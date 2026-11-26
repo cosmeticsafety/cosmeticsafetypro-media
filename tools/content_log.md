@@ -147,3 +147,4 @@ Do NOT reuse for new posts/reels: counterfeit cosmetics, green claims, TPP ban, 
 23 Nov run: 24 Nov fully pre-scheduled (SCPN step by step post 18:00 + pin 18:05; es UV filters Annex VI reel 16:00 IG+FB+LI+TikTok + Short 16:00 + pin 16:10) — nothing new built; no English reel on 24 Nov per one-reel rule.
 24 Nov run: 25 Nov fully pre-scheduled (Northern Ireland rules post 18:00 + pin 18:05; children under 3 CPSR reel 20:00 IG+FB+LI+TikTok + Short 20:00 + pin 20:10) — nothing new built.
 25 Nov run: 26 Nov fully pre-scheduled (gift sets & advent calendars labelling post 18:00 + pin 18:05; 3 red flags in a CPSR reel 20:00 IG+FB+LI+TikTok + Short 20:00 + pin 20:10) — nothing new built.
+26 Nov run: 27 Nov fully pre-scheduled (EU Safety Gate 2025 / recalls post 18:00 + pin 18:05; it CMR substances Art. 15 reel 16:00 IG+FB+LI+TikTok + Short 16:00 + pin 16:10) — nothing new built; no English reel on 27 Nov per one-reel rule.
